@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+/* Zurücksetzen der Innen- und Außenabstände */
+* {
+  margin: 0;
+  padding: 0;
+}
+canvas { background: transparent; display: block; margin: 0 auto; }
+
+#wrapper {
+    /*border: 2px solid navy;*/
+    width:1005px;
+    background-color:transparent;
+    margin:0px auto;
+}
+#head {
+border: 2px solid navy;
+    width:1000px;
+    height: 80px;
+}
+p.title {
+    position: relative;
+    font-size: 50px;
+    top: 20px;
+    left: 350px;
+    z-index: 2;
+}
+#jsframe {
+    border: 2px solid navy;
+    position: absolute;
+    margin: 0px 0px 0px 0px;
+    top: 0px 0px 0px 0px;
+    z-index: +1;
+}
+#jsframe1 {
+    border: 2px solid navy;
+    position: absolute;
+    margin: 0px 0px 0px 0px;
+    top: 0px 0px 0px 0px;
+    z-index: -1;
+}
+#jsframe2 {
+    border: 2px solid navy;
+    position: absolute;
+    margin: 0px 0px 0px 0px;
+    top: 0px 0px 0px 0px;
+    z-index: 1;
+}
+#sidebar {
+    border: 2px solid navy;
+    position: relative;
+    width: 350px;
+    height:500px;
+    left: 650px;
+
+}
+#footer{
+    border: 2px solid navy;
+    position: relative;
+    width: 650px;
+    height:100px;
+    left: 0px;
+}

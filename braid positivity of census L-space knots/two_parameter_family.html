@@ -1,0 +1,238 @@
+<html>
+<head><meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.15.3/katex.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/antd/4.19.5/antd.compact.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div style="margin:30px 30px 0 0"><div style="margin-bottom:15px"><b>Kernel:</b> <!-- -->SageMath 9.5</div><div><div style="margin-bottom:10px"><div style="display:flex;flex-direction:row;align-items:stretch"><div style="color:#303F9F;min-width:7em;font-family:monospace;text-align:right;padding-right:5px"></div><div style="width:100%"><p><span>In this notebook we verify that all links (except the 5 stated in Proposition 3.1) in the two parameter family K_nm are hyperbolic. We defined K_nm via the surgery description L12n1739(-1,2n+m+3)(0,0)(1,n+1). (The different signs stem from the fact that L12n1739 is the mirror of the surgery description from our paper.) Now the idea is to use Gromov-Thurston&#x27;s 2pi-Theorem to see that all long fillings are directly hyperbolic and check the remaining short fillings directly.</span></p></div></div><div></div></div><div style="margin-bottom:10px"><div style="display:flex;flex-direction:row;align-items:stretch"><div style="color:#303F9F;min-width:7em;font-family:monospace;text-align:right;padding-right:5px">In [<!-- -->1<!-- -->]:</div><div style="width:100%;border-radius:2px;position:relative;overflow-x:auto;border:1px solid rgb(207, 207, 207)"><pre class="CodeMirror cm-s-default  CodeMirror-wrap" style="width:100%;overflow-x:auto;line-height:normal;height:auto;font-size:inherit;margin-bottom:0;padding:4px;white-space:pre-wrap;word-wrap:break-word;word-break:normal;border:0;background:white"><div style="margin-left:0"><span class="cm-keyword">import</span><span> </span><span class="cm-variable">snappy</span><span>
+</span></div></pre></div></div><div></div></div><div style="margin-bottom:10px"><div style="display:flex;flex-direction:row;align-items:stretch"><div style="color:#303F9F;min-width:7em;font-family:monospace;text-align:right;padding-right:5px">In [<!-- -->2<!-- -->]:</div><div style="width:100%;border-radius:2px;position:relative;overflow-x:auto;border:1px solid rgb(207, 207, 207)"><pre class="CodeMirror cm-s-default  CodeMirror-wrap" style="width:100%;overflow-x:auto;line-height:normal;height:auto;font-size:inherit;margin-bottom:0;padding:4px;white-space:pre-wrap;word-wrap:break-word;word-break:normal;border:0;background:white"><div style="margin-left:0"><span class="cm-variable">L</span><span>=</span><span class="cm-variable">snappy</span><span>.</span><span class="cm-variable">Manifold</span><span>(</span><span class="cm-string">&#x27;L12n1739&#x27;</span><span>)</span><span>
+</span><span class="cm-variable">L</span><span>.</span><span class="cm-variable">verify_hyperbolicity</span><span>(</span><span>)</span><span>[</span><span class="cm-number">0</span><span>]</span><span>
+</span></div></pre></div></div><div style="display:flex;flex-direction:row;align-items:stretch" cocalc-test="cell-output"><div class="ant-btn ant-btn-default" style="border-color:transparent;font-size:inherit;padding:0;display:flex;flex-direction:column;height:auto"><div style="color:#D84315;min-width:7em;font-family:monospace;text-align:right;padding-right:5px;padding-bottom:2px">Out[<!-- -->2<!-- -->]:</div><div style="flex:1"></div> </div><div style="flex:1;overflow-x:auto;line-height:normal;background-color:#fff;border:0;margin-bottom:0;margin-left:1px" class="cocalc-jupyter-rendered"><div style="white-space:pre-wrap;word-wrap:break-word;font-family:monospace;padding-top:5px;padding-bottom:5px"><span>True</span></div></div></div></div><div style="margin-bottom:10px"><div style="display:flex;flex-direction:row;align-items:stretch"><div style="color:#303F9F;min-width:7em;font-family:monospace;text-align:right;padding-right:5px">In [<!-- -->3<!-- -->]:</div><div style="width:100%;border-radius:2px;position:relative;overflow-x:auto;border:1px solid rgb(207, 207, 207)"><pre class="CodeMirror cm-s-default  CodeMirror-wrap" style="width:100%;overflow-x:auto;line-height:normal;height:auto;font-size:inherit;margin-bottom:0;padding:4px;white-space:pre-wrap;word-wrap:break-word;word-break:normal;border:0;background:white"><div style="margin-left:0"><span class="cm-variable">L</span><span>.</span><span class="cm-variable">dehn_fill</span><span>(</span><span>[</span><span>(</span><span class="cm-operator">-</span><span class="cm-number">1</span><span>,</span><span class="cm-number">5</span><span>)</span><span>,</span><span>(</span><span class="cm-number">0</span><span>,</span><span class="cm-number">0</span><span>)</span><span>,</span><span>(</span><span class="cm-number">1</span><span>,</span><span class="cm-number">2</span><span>)</span><span>]</span><span>)</span><span>
+</span><span class="cm-variable">L</span><span>.</span><span class="cm-variable">identify</span><span>(</span><span>)</span><span>
+</span></div></pre></div></div><div style="display:flex;flex-direction:row;align-items:stretch" cocalc-test="cell-output"><div class="ant-btn ant-btn-default" style="border-color:transparent;font-size:inherit;padding:0;display:flex;flex-direction:column;height:auto"><div style="color:#D84315;min-width:7em;font-family:monospace;text-align:right;padding-right:5px;padding-bottom:2px">Out[<!-- -->3<!-- -->]:</div><div style="flex:1"></div> </div><div style="flex:1;overflow-x:auto;line-height:normal;background-color:#fff;border:0;margin-bottom:0;margin-left:1px" class="cocalc-jupyter-rendered"><div style="white-space:pre-wrap;word-wrap:break-word;font-family:monospace;padding-top:5px;padding-bottom:5px"><span>[o9_30634(0,0), K9_449(0,0)]</span></div></div></div></div><div style="margin-bottom:10px"><div style="display:flex;flex-direction:row;align-items:stretch"><div style="color:#303F9F;min-width:7em;font-family:monospace;text-align:right;padding-right:5px">In [<!-- -->4<!-- -->]:</div><div style="width:100%;border-radius:2px;position:relative;overflow-x:auto;border:1px solid rgb(207, 207, 207)"><pre class="CodeMirror cm-s-default  CodeMirror-wrap" style="width:100%;overflow-x:auto;line-height:normal;height:auto;font-size:inherit;margin-bottom:0;padding:4px;white-space:pre-wrap;word-wrap:break-word;word-break:normal;border:0;background:white"><div style="margin-left:0"><span class="cm-variable">L</span><span>.</span><span class="cm-variable">is_isometric_to</span><span>(</span><span class="cm-variable">snappy</span><span>.</span><span class="cm-variable">Manifold</span><span>(</span><span class="cm-string">&#x27;o9_30634&#x27;</span><span>)</span><span>,</span><span class="cm-variable">return_isometries</span><span>=</span><span class="cm-keyword">True</span><span>)</span><span>
+</span></div></pre></div></div><div style="display:flex;flex-direction:row;align-items:stretch" cocalc-test="cell-output"><div class="ant-btn ant-btn-default" style="border-color:transparent;font-size:inherit;padding:0;display:flex;flex-direction:column;height:auto"><div style="color:#D84315;min-width:7em;font-family:monospace;text-align:right;padding-right:5px;padding-bottom:2px">Out[<!-- -->4<!-- -->]:</div><div style="flex:1"></div> </div><div style="flex:1;overflow-x:auto;line-height:normal;background-color:#fff;border:0;margin-bottom:0;margin-left:1px" class="cocalc-jupyter-rendered"><div style="white-space:pre-wrap;word-wrap:break-word;font-family:monospace;padding-top:5px;padding-bottom:5px"><span>[0 -&gt; 0
+ [1 2] 
+ [0 1] 
+ Extends to link,
+ 0 -&gt; 0 
+ [-1 -2]
+ [ 0 -1]
+ Extends to link]</span></div></div></div></div><div style="margin-bottom:10px"><div style="display:flex;flex-direction:row;align-items:stretch"><div style="color:#303F9F;min-width:7em;font-family:monospace;text-align:right;padding-right:5px">In [<!-- -->5<!-- -->]:</div><div style="width:100%;border-radius:2px;position:relative;overflow-x:auto;border:1px solid rgb(207, 207, 207)"><pre class="CodeMirror cm-s-default  CodeMirror-wrap" style="width:100%;overflow-x:auto;line-height:normal;height:auto;font-size:inherit;margin-bottom:0;padding:4px;white-space:pre-wrap;word-wrap:break-word;word-break:normal;border:0;background:white"><div style="margin-left:0"><span class="cm-variable">L</span><span>=</span><span class="cm-variable">snappy</span><span>.</span><span class="cm-variable">Manifold</span><span>(</span><span class="cm-string">&#x27;L12n1739&#x27;</span><span>)</span><span>
+</span><span class="cm-variable">L</span><span>.</span><span class="cm-variable">short_slopes</span><span>(</span><span class="cm-variable">length</span><span>=</span><span class="cm-number">6.3</span><span>,</span><span class="cm-variable">verified</span><span>=</span><span class="cm-keyword">True</span><span>)</span><span>
+</span></div></pre></div></div><div style="display:flex;flex-direction:row;align-items:stretch" cocalc-test="cell-output"><div class="ant-btn ant-btn-default" style="border-color:transparent;font-size:inherit;padding:0;display:flex;flex-direction:column;height:auto"><div style="color:#D84315;min-width:7em;font-family:monospace;text-align:right;padding-right:5px;padding-bottom:2px">Out[<!-- -->5<!-- -->]:</div><div style="flex:1"></div> </div><div style="flex:1;overflow-x:auto;line-height:normal;background-color:#fff;border:0;margin-bottom:0;margin-left:1px" class="cocalc-jupyter-rendered"><div style="white-space:pre-wrap;word-wrap:break-word;font-family:monospace;padding-top:5px;padding-bottom:5px"><span>[[(1, 0), (-2, 1), (-1, 1), (0, 1), (1, 1), (-1, 2), (1, 2), (-1, 3)],
+ [(1, 0),
+  (-5, 1),
+  (-4, 1),
+  (-3, 1),
+  (-2, 1),
+  (-1, 1),
+  (0, 1),
+  (1, 1),
+  (-5, 2),
+  (-3, 2)],
+ [(1, 0), (-2, 1), (-1, 1), (0, 1), (1, 1), (2, 1), (-1, 2), (1, 2)]]</span></div></div></div></div><div style="margin-bottom:10px"><div style="display:flex;flex-direction:row;align-items:stretch"><div style="color:#303F9F;min-width:7em;font-family:monospace;text-align:right;padding-right:5px"></div><div style="width:100%"><p><span>Thus it follows that if (n+1 is not -2,-1,0,1,2) and (2n+m+3 is not -3,-2,-1,0,1,2) then K_nm is hyperbolic. </span></p><p><span>In the other cases, we first observe that L(0,0(0,0)(1,0) is the T(4,2) torus link. And thus L(1,k)(0,0)(1,0) is the T(-2k-1,2) torus knot.</span></p><p><span>For the remaining short slopes we first fill one remaining component permanently and then use the 2pi-Theorem again to get a finite list of slopes that might not be hyperbolic.</span></p></div></div><div></div></div><div style="margin-bottom:10px"><div style="display:flex;flex-direction:row;align-items:stretch"><div style="color:#303F9F;min-width:7em;font-family:monospace;text-align:right;padding-right:5px">In [<!-- -->6<!-- -->]:</div><div style="width:100%;border-radius:2px;position:relative;overflow-x:auto;border:1px solid rgb(207, 207, 207)"><pre class="CodeMirror cm-s-default  CodeMirror-wrap" style="width:100%;overflow-x:auto;line-height:normal;height:auto;font-size:inherit;margin-bottom:0;padding:4px;white-space:pre-wrap;word-wrap:break-word;word-break:normal;border:0;background:white"><div style="margin-left:0"><span class="cm-comment">#The short reciprocal integer slopes of cusps 0 and 2.</span><span>
+</span><span class="cm-variable">slopes0</span><span>=</span><span>[</span><span>(</span><span class="cm-operator">-</span><span class="cm-number">1</span><span>,</span><span> </span><span class="cm-number">1</span><span>)</span><span>,</span><span> </span><span>(</span><span class="cm-number">1</span><span>,</span><span> </span><span class="cm-number">1</span><span>)</span><span>,</span><span> </span><span>(</span><span class="cm-operator">-</span><span class="cm-number">1</span><span>,</span><span> </span><span class="cm-number">2</span><span>)</span><span>,</span><span> </span><span>(</span><span class="cm-number">1</span><span>,</span><span> </span><span class="cm-number">2</span><span>)</span><span>,</span><span> </span><span>(</span><span class="cm-operator">-</span><span class="cm-number">1</span><span>,</span><span> </span><span class="cm-number">3</span><span>)</span><span>,</span><span>(</span><span class="cm-number">1</span><span>,</span><span class="cm-number">0</span><span>)</span><span>]</span><span>
+</span><span class="cm-variable">slopes2</span><span>=</span><span>[</span><span>(</span><span class="cm-operator">-</span><span class="cm-number">1</span><span>,</span><span> </span><span class="cm-number">1</span><span>)</span><span>,</span><span> </span><span>(</span><span class="cm-number">1</span><span>,</span><span> </span><span class="cm-number">1</span><span>)</span><span>,</span><span> </span><span>(</span><span class="cm-operator">-</span><span class="cm-number">1</span><span>,</span><span> </span><span class="cm-number">2</span><span>)</span><span>,</span><span> </span><span>(</span><span class="cm-number">1</span><span>,</span><span> </span><span class="cm-number">2</span><span>)</span><span>]</span><span>
+</span><span>
+</span><span class="cm-variable">unclear_slopes</span><span>=</span><span>[</span><span>]</span><span>
+</span><span>
+</span><span class="cm-keyword">for</span><span> </span><span class="cm-variable">s0</span><span> </span><span class="cm-keyword">in</span><span> </span><span class="cm-variable">slopes0</span><span>:</span><span>
+</span><span>    </span><span class="cm-variable">L</span><span>.</span><span class="cm-variable">dehn_fill</span><span>(</span><span class="cm-variable">s0</span><span>,</span><span class="cm-number">0</span><span>)</span><span>
+</span><span>    </span><span class="cm-variable">F</span><span>=</span><span class="cm-variable">L</span><span>.</span><span class="cm-variable">filled_triangulation</span><span>(</span><span>)</span><span>
+</span><span>    </span><span class="cm-variable">short</span><span>=</span><span class="cm-variable">F</span><span>.</span><span class="cm-variable">short_slopes</span><span>(</span><span class="cm-variable">length</span><span>=</span><span class="cm-number">6.3</span><span>,</span><span class="cm-variable">verified</span><span>=</span><span class="cm-keyword">True</span><span>)</span><span>[</span><span class="cm-number">1</span><span>]</span><span>
+</span><span>    </span><span class="cm-keyword">for</span><span> </span><span class="cm-variable">s2</span><span> </span><span class="cm-keyword">in</span><span> </span><span class="cm-variable">short</span><span>:</span><span>
+</span><span>        </span><span class="cm-keyword">if</span><span> </span><span class="cm-builtin">abs</span><span>(</span><span class="cm-variable">s2</span><span>[</span><span class="cm-number">0</span><span>]</span><span>)</span><span class="cm-operator">==</span><span class="cm-number">1</span><span>:</span><span>
+</span><span>            </span><span class="cm-keyword">if</span><span> </span><span class="cm-builtin">abs</span><span>(</span><span class="cm-variable">s2</span><span>[</span><span class="cm-number">1</span><span>]</span><span>)</span><span class="cm-operator">!=</span><span class="cm-number">0</span><span>:</span><span>
+</span><span>                </span><span class="cm-variable">unclear_slopes</span><span>.</span><span class="cm-variable">append</span><span>(</span><span>[</span><span class="cm-variable">s0</span><span>,</span><span>(</span><span class="cm-number">0</span><span>,</span><span class="cm-number">0</span><span>)</span><span>,</span><span class="cm-variable">s2</span><span>]</span><span>)</span><span>
+</span><span class="cm-variable">L</span><span>.</span><span class="cm-variable">dehn_fill</span><span>(</span><span>(</span><span class="cm-number">0</span><span>,</span><span class="cm-number">0</span><span>)</span><span>,</span><span class="cm-number">0</span><span>)</span><span>
+</span><span>
+</span><span class="cm-keyword">for</span><span> </span><span class="cm-variable">s2</span><span> </span><span class="cm-keyword">in</span><span> </span><span class="cm-variable">slopes2</span><span>:</span><span>
+</span><span>    </span><span class="cm-variable">L</span><span>.</span><span class="cm-variable">dehn_fill</span><span>(</span><span class="cm-variable">s2</span><span>,</span><span class="cm-number">2</span><span>)</span><span>
+</span><span>    </span><span class="cm-variable">F</span><span>=</span><span class="cm-variable">L</span><span>.</span><span class="cm-variable">filled_triangulation</span><span>(</span><span>)</span><span>
+</span><span>    </span><span class="cm-variable">short</span><span>=</span><span class="cm-variable">F</span><span>.</span><span class="cm-variable">short_slopes</span><span>(</span><span class="cm-variable">length</span><span>=</span><span class="cm-number">6.3</span><span>,</span><span class="cm-variable">verified</span><span>=</span><span class="cm-keyword">True</span><span>)</span><span>[</span><span class="cm-number">0</span><span>]</span><span>
+</span><span>    </span><span class="cm-keyword">for</span><span> </span><span class="cm-variable">s0</span><span> </span><span class="cm-keyword">in</span><span> </span><span class="cm-variable">short</span><span>:</span><span>
+</span><span>        </span><span class="cm-keyword">if</span><span> </span><span class="cm-builtin">abs</span><span>(</span><span class="cm-variable">s0</span><span>[</span><span class="cm-number">0</span><span>]</span><span>)</span><span class="cm-operator">==</span><span class="cm-number">1</span><span>:</span><span>
+</span><span>            </span><span class="cm-keyword">if</span><span> </span><span class="cm-builtin">abs</span><span>(</span><span class="cm-variable">s0</span><span>[</span><span class="cm-number">1</span><span>]</span><span>)</span><span class="cm-operator">!=</span><span class="cm-number">0</span><span>:</span><span>
+</span><span>                </span><span class="cm-variable">unclear_slopes</span><span>.</span><span class="cm-variable">append</span><span>(</span><span>[</span><span class="cm-variable">s0</span><span>,</span><span>(</span><span class="cm-number">0</span><span>,</span><span class="cm-number">0</span><span>)</span><span>,</span><span class="cm-variable">s2</span><span>]</span><span>)</span><span>
+</span><span class="cm-variable">L</span><span>.</span><span class="cm-variable">dehn_fill</span><span>(</span><span>(</span><span class="cm-number">0</span><span>,</span><span class="cm-number">0</span><span>)</span><span>,</span><span class="cm-number">2</span><span>)</span><span>
+</span><span>
+</span><span class="cm-variable">unclear_slopes</span><span>
+</span></div></pre></div></div><div style="display:flex;flex-direction:row;align-items:stretch" cocalc-test="cell-output"><div class="ant-btn ant-btn-default" style="border-color:transparent;font-size:inherit;padding:0;display:flex;flex-direction:column;height:auto"><div style="color:#D84315;min-width:7em;font-family:monospace;text-align:right;padding-right:5px;padding-bottom:2px">Out[<!-- -->6<!-- -->]:</div><div style="flex:1"></div> </div><div style="flex:1;overflow-x:auto;line-height:normal;background-color:#fff;border:0;margin-bottom:0;margin-left:1px" class="cocalc-jupyter-rendered"><div style="white-space:pre-wrap;word-wrap:break-word;font-family:monospace;padding-top:5px;padding-bottom:5px"><span>[[(-1, 1), (0, 0), (-1, 1)],
+ [(-1, 1), (0, 0), (1, 1)],
+ [(-1, 1), (0, 0), (1, 2)],
+ [(1, 1), (0, 0), (-1, 1)],
+ [(1, 1), (0, 0), (1, 1)],
+ [(1, 1), (0, 0), (-1, 2)],
+ [(1, 1), (0, 0), (1, 2)],
+ [(-1, 2), (0, 0), (-1, 1)],
+ [(-1, 2), (0, 0), (1, 1)],
+ [(-1, 2), (0, 0), (-1, 2)],
+ [(-1, 2), (0, 0), (1, 2)],
+ [(1, 2), (0, 0), (-1, 1)],
+ [(1, 2), (0, 0), (1, 1)],
+ [(1, 2), (0, 0), (-1, 2)],
+ [(1, 2), (0, 0), (1, 2)],
+ [(-1, 3), (0, 0), (-1, 1)],
+ [(-1, 3), (0, 0), (1, 1)],
+ [(-1, 3), (0, 0), (-1, 2)],
+ [(-1, 3), (0, 0), (1, 2)],
+ [(1, 0), (0, 0), (-1, 1)],
+ [(1, 0), (0, 0), (1, 1)],
+ [(1, 0), (0, 0), (-1, 2)],
+ [(-1, 1), (0, 0), (-1, 1)],
+ [(1, 1), (0, 0), (-1, 1)],
+ [(-1, 2), (0, 0), (-1, 1)],
+ [(1, 2), (0, 0), (-1, 1)],
+ [(1, 3), (0, 0), (-1, 1)],
+ [(1, 4), (0, 0), (-1, 1)],
+ [(-1, 1), (0, 0), (1, 1)],
+ [(1, 1), (0, 0), (1, 1)],
+ [(-1, 2), (0, 0), (1, 1)],
+ [(-1, 3), (0, 0), (1, 1)],
+ [(-1, 4), (0, 0), (1, 1)],
+ [(-1, 5), (0, 0), (1, 1)],
+ [(-1, 1), (0, 0), (-1, 2)],
+ [(1, 1), (0, 0), (-1, 2)],
+ [(-1, 2), (0, 0), (-1, 2)],
+ [(1, 2), (0, 0), (-1, 2)],
+ [(-1, 3), (0, 0), (-1, 2)],
+ [(1, 3), (0, 0), (-1, 2)],
+ [(-1, 1), (0, 0), (1, 2)],
+ [(1, 1), (0, 0), (1, 2)],
+ [(-1, 2), (0, 0), (1, 2)],
+ [(1, 2), (0, 0), (1, 2)],
+ [(-1, 3), (0, 0), (1, 2)],
+ [(-1, 4), (0, 0), (1, 2)]]</span></div></div></div></div><div style="margin-bottom:10px"><div style="display:flex;flex-direction:row;align-items:stretch"><div style="color:#303F9F;min-width:7em;font-family:monospace;text-align:right;padding-right:5px">In [<!-- -->7<!-- -->]:</div><div style="width:100%;border-radius:2px;position:relative;overflow-x:auto;border:1px solid rgb(207, 207, 207)"><pre class="CodeMirror cm-s-default  CodeMirror-wrap" style="width:100%;overflow-x:auto;line-height:normal;height:auto;font-size:inherit;margin-bottom:0;padding:4px;white-space:pre-wrap;word-wrap:break-word;word-break:normal;border:0;background:white"><div style="margin-left:0"><span class="cm-builtin">len</span><span>(</span><span class="cm-variable">unclear_slopes</span><span>)</span><span>
+</span></div></pre></div></div><div style="display:flex;flex-direction:row;align-items:stretch" cocalc-test="cell-output"><div class="ant-btn ant-btn-default" style="border-color:transparent;font-size:inherit;padding:0;display:flex;flex-direction:column;height:auto"><div style="color:#D84315;min-width:7em;font-family:monospace;text-align:right;padding-right:5px;padding-bottom:2px">Out[<!-- -->7<!-- -->]:</div><div style="flex:1"></div> </div><div style="flex:1;overflow-x:auto;line-height:normal;background-color:#fff;border:0;margin-bottom:0;margin-left:1px" class="cocalc-jupyter-rendered"><div style="white-space:pre-wrap;word-wrap:break-word;font-family:monospace;padding-top:5px;padding-bottom:5px"><span>46</span></div></div></div></div><div style="margin-bottom:10px"><div style="display:flex;flex-direction:row;align-items:stretch"><div style="color:#303F9F;min-width:7em;font-family:monospace;text-align:right;padding-right:5px"></div><div style="width:100%"><p><span>We are left with checking these 46 slopes. We first try to verify that they are hyperbolic via SnapPy.</span></p></div></div><div></div></div><div style="margin-bottom:10px"><div style="display:flex;flex-direction:row;align-items:stretch"><div style="color:#303F9F;min-width:7em;font-family:monospace;text-align:right;padding-right:5px">In [<!-- -->8<!-- -->]:</div><div style="width:100%;border-radius:2px;position:relative;overflow-x:auto;border:1px solid rgb(207, 207, 207)"><pre class="CodeMirror cm-s-default  CodeMirror-wrap" style="width:100%;overflow-x:auto;line-height:normal;height:auto;font-size:inherit;margin-bottom:0;padding:4px;white-space:pre-wrap;word-wrap:break-word;word-break:normal;border:0;background:white"><div style="margin-left:0"><span class="cm-keyword">def</span><span> </span><span class="cm-def">all_positive</span><span>(</span><span class="cm-variable">manifold</span><span>)</span><span>:</span><span>
+</span><span>    </span><span class="cm-string">&#x27;&#x27;&#x27;</span><span>
+</span><span class="cm-string">    Checks if the solution type of a triangulation is positive.</span><span>
+</span><span class="cm-string">    &#x27;&#x27;&#x27;</span><span>
+</span><span>    </span><span class="cm-keyword">return</span><span> </span><span class="cm-variable">manifold</span><span>.</span><span class="cm-variable">solution_type</span><span>(</span><span>)</span><span> </span><span class="cm-operator">==</span><span> </span><span class="cm-string">&#x27;all tetrahedra positively oriented&#x27;</span><span>
+</span><span>
+</span><span class="cm-keyword">def</span><span> </span><span class="cm-def">find_positive_triangulations</span><span>(</span><span class="cm-variable">manifold</span><span>,</span><span class="cm-variable">number</span><span>=</span><span class="cm-number">1</span><span>,</span><span class="cm-variable">tries</span><span>=</span><span class="cm-number">100</span><span>)</span><span>:</span><span>
+</span><span>    </span><span class="cm-string">&#x27;&#x27;&#x27;</span><span>
+</span><span class="cm-string">    Searches for one triangulation with a positive solution type.</span><span>
+</span><span class="cm-string">    (Or if number is set to a different value also for different such triangulations.)</span><span>
+</span><span class="cm-string">    &#x27;&#x27;&#x27;</span><span>
+</span><span>    </span><span class="cm-variable">M</span><span> </span><span>=</span><span> </span><span class="cm-variable">manifold</span><span>.</span><span class="cm-variable">copy</span><span>(</span><span>)</span><span>
+</span><span>    </span><span class="cm-variable">pos_triangulations</span><span>=</span><span>[</span><span>]</span><span>
+</span><span>    </span><span class="cm-keyword">for</span><span> </span><span class="cm-variable">i</span><span> </span><span class="cm-keyword">in</span><span> </span><span class="cm-builtin">range</span><span>(</span><span class="cm-variable">tries</span><span>)</span><span>:</span><span>
+</span><span>        </span><span class="cm-keyword">if</span><span> </span><span class="cm-variable">all_positive</span><span>(</span><span class="cm-variable">M</span><span>)</span><span>:</span><span>
+</span><span>            </span><span class="cm-variable">pos_triangulations</span><span>.</span><span class="cm-variable">append</span><span>(</span><span class="cm-variable">M</span><span>)</span><span>
+</span><span>            </span><span class="cm-keyword">if</span><span> </span><span class="cm-builtin">len</span><span>(</span><span class="cm-variable">pos_triangulations</span><span>)</span><span class="cm-operator">==</span><span class="cm-variable">number</span><span>:</span><span>
+</span><span>                </span><span class="cm-keyword">return</span><span> </span><span class="cm-variable">pos_triangulations</span><span>
+</span><span>            </span><span class="cm-keyword">break</span><span>
+</span><span>        </span><span class="cm-variable">M</span><span>.</span><span class="cm-variable">randomize</span><span>(</span><span>)</span><span>
+</span><span>    </span><span class="cm-keyword">for</span><span> </span><span class="cm-variable">d</span><span> </span><span class="cm-keyword">in</span><span> </span><span class="cm-variable">M</span><span>.</span><span class="cm-variable">dual_curves</span><span>(</span><span class="cm-variable">max_segments</span><span>=</span><span class="cm-number">500</span><span>)</span><span>:</span><span>
+</span><span>        </span><span class="cm-variable">X</span><span> </span><span>=</span><span> </span><span class="cm-variable">M</span><span>.</span><span class="cm-variable">drill</span><span>(</span><span class="cm-variable">d</span><span>)</span><span>
+</span><span>        </span><span class="cm-variable">X</span><span> </span><span>=</span><span> </span><span class="cm-variable">X</span><span>.</span><span class="cm-variable">filled_triangulation</span><span>(</span><span>)</span><span>
+</span><span>        </span><span class="cm-variable">X</span><span>.</span><span class="cm-variable">dehn_fill</span><span>(</span><span>(</span><span class="cm-number">1</span><span>,</span><span class="cm-number">0</span><span>)</span><span>,</span><span class="cm-operator">-</span><span class="cm-number">1</span><span>)</span><span>
+</span><span>        </span><span class="cm-keyword">for</span><span> </span><span class="cm-variable">i</span><span> </span><span class="cm-keyword">in</span><span> </span><span class="cm-builtin">range</span><span>(</span><span class="cm-variable">tries</span><span>)</span><span>:</span><span>
+</span><span>            </span><span class="cm-keyword">if</span><span> </span><span class="cm-variable">all_positive</span><span>(</span><span class="cm-variable">X</span><span>)</span><span>:</span><span>
+</span><span>                </span><span class="cm-variable">pos_triangulations</span><span>.</span><span class="cm-variable">append</span><span>(</span><span class="cm-variable">X</span><span>)</span><span>
+</span><span>                </span><span class="cm-keyword">if</span><span> </span><span class="cm-builtin">len</span><span>(</span><span class="cm-variable">pos_triangulations</span><span>)</span><span class="cm-operator">==</span><span class="cm-variable">number</span><span>:</span><span>
+</span><span>                    </span><span class="cm-keyword">return</span><span> </span><span class="cm-variable">pos_triangulations</span><span>
+</span><span>                </span><span class="cm-keyword">break</span><span>
+</span><span>            </span><span class="cm-variable">X</span><span>.</span><span class="cm-variable">randomize</span><span>(</span><span>)</span><span>
+</span><span>
+</span><span>    </span><span class="cm-comment"># In the closed case, here is another trick.</span><span>
+</span><span>    </span><span class="cm-keyword">if</span><span> </span><span class="cm-builtin">all</span><span>(</span><span class="cm-keyword">not</span><span> </span><span class="cm-variable">c</span><span> </span><span class="cm-keyword">for</span><span> </span><span class="cm-variable">c</span><span> </span><span class="cm-keyword">in</span><span> </span><span class="cm-variable">M</span><span>.</span><span class="cm-variable">cusp_info</span><span>(</span><span class="cm-string">&#x27;is_complete&#x27;</span><span>)</span><span>)</span><span>:</span><span>
+</span><span>        </span><span class="cm-keyword">for</span><span> </span><span class="cm-variable">i</span><span> </span><span class="cm-keyword">in</span><span> </span><span class="cm-builtin">range</span><span>(</span><span class="cm-variable">tries</span><span>)</span><span>:</span><span>
+</span><span>            </span><span class="cm-comment"># Drills out a random edge</span><span>
+</span><span>            </span><span class="cm-variable">X</span><span> </span><span>=</span><span> </span><span class="cm-variable">M</span><span>.</span><span class="cm-variable">__class__</span><span>(</span><span class="cm-variable">M</span><span>.</span><span class="cm-variable">filled_triangulation</span><span>(</span><span>)</span><span>)</span><span>
+</span><span>            </span><span class="cm-keyword">if</span><span> </span><span class="cm-variable">all_positive</span><span>(</span><span class="cm-variable">X</span><span>)</span><span>:</span><span>
+</span><span>                </span><span class="cm-variable">pos_triangulations</span><span>.</span><span class="cm-variable">append</span><span>(</span><span class="cm-variable">X</span><span>)</span><span>
+</span><span>                </span><span class="cm-keyword">if</span><span> </span><span class="cm-builtin">len</span><span>(</span><span class="cm-variable">pos_triangulations</span><span>)</span><span class="cm-operator">==</span><span class="cm-variable">number</span><span>:</span><span>
+</span><span>                    </span><span class="cm-keyword">return</span><span> </span><span class="cm-variable">pos_triangulations</span><span>
+</span><span>            </span><span class="cm-keyword">break</span><span>
+</span><span>            </span><span class="cm-variable">M</span><span>.</span><span class="cm-variable">randomize</span><span>(</span><span>)</span><span>
+</span><span>    </span><span class="cm-keyword">return</span><span> </span><span class="cm-variable">pos_triangulations</span><span>
+</span></div></pre></div></div><div></div></div><div style="margin-bottom:10px"><div style="display:flex;flex-direction:row;align-items:stretch"><div style="color:#303F9F;min-width:7em;font-family:monospace;text-align:right;padding-right:5px">In [<!-- -->9<!-- -->]:</div><div style="width:100%;border-radius:2px;position:relative;overflow-x:auto;border:1px solid rgb(207, 207, 207)"><pre class="CodeMirror cm-s-default  CodeMirror-wrap" style="width:100%;overflow-x:auto;line-height:normal;height:auto;font-size:inherit;margin-bottom:0;padding:4px;white-space:pre-wrap;word-wrap:break-word;word-break:normal;border:0;background:white"><div style="margin-left:0"><span class="cm-variable">still_unclear</span><span>=</span><span>[</span><span>]</span><span>
+</span><span class="cm-keyword">for</span><span> </span><span class="cm-variable">s</span><span> </span><span class="cm-keyword">in</span><span> </span><span class="cm-variable">unclear_slopes</span><span>:</span><span>
+</span><span>    </span><span class="cm-variable">L</span><span>.</span><span class="cm-variable">dehn_fill</span><span>(</span><span class="cm-variable">s</span><span>)</span><span>
+</span><span>    </span><span class="cm-keyword">try</span><span>:</span><span>
+</span><span>        </span><span class="cm-variable">P</span><span>=</span><span class="cm-variable">find_positive_triangulations</span><span>(</span><span class="cm-variable">L</span><span>,</span><span class="cm-variable">number</span><span>=</span><span class="cm-number">1</span><span>,</span><span class="cm-variable">tries</span><span>=</span><span class="cm-number">100</span><span>)</span><span>[</span><span class="cm-number">0</span><span>]</span><span>
+</span><span>    </span><span class="cm-keyword">except</span><span> </span><span>(</span><span class="cm-variable">IndexError</span><span>,</span><span class="cm-variable">snappy</span><span>.</span><span class="cm-variable">SnapPeaFatalError</span><span>)</span><span>:</span><span>
+</span><span>        </span><span class="cm-variable">P</span><span>=</span><span class="cm-variable">L</span><span>
+</span><span>    </span><span class="cm-variable">hyp</span><span>=</span><span class="cm-variable">P</span><span>.</span><span class="cm-variable">verify_hyperbolicity</span><span>(</span><span>)</span><span>[</span><span class="cm-number">0</span><span>]</span><span>
+</span><span>    </span><span class="cm-builtin">print</span><span>(</span><span class="cm-variable">L</span><span>,</span><span class="cm-variable">hyp</span><span>)</span><span>
+</span><span>    </span><span class="cm-keyword">if</span><span> </span><span class="cm-variable">hyp</span><span class="cm-operator">==</span><span class="cm-keyword">False</span><span>:</span><span>
+</span><span>        </span><span class="cm-variable">still_unclear</span><span>.</span><span class="cm-variable">append</span><span>(</span><span class="cm-variable">s</span><span>)</span><span>
+</span></div></pre></div></div><div style="display:flex;flex-direction:row;align-items:stretch" cocalc-test="cell-output"><div class="ant-btn ant-btn-default" style="border-color:transparent;font-size:inherit;padding:0;display:flex;flex-direction:column;height:auto"><div style="color:#D84315;min-width:7em;font-family:monospace;text-align:right;padding-right:5px;padding-bottom:2px">Out[<!-- -->9<!-- -->]:</div><div style="flex:1"></div> </div><div style="flex:1;overflow-x:auto;line-height:normal;background-color:#fff;border:0;margin-bottom:0;margin-left:1px" class="cocalc-jupyter-rendered"><div style="white-space:pre-wrap;word-wrap:break-word;font-family:monospace;padding-top:5px;padding-bottom:5px"><span>L12n1739(-1,1)(0,0)(-1,1) False
+L12n1739(-1,1)(0,0)(1,1) False
+L12n1739(-1,1)(0,0)(1,2) True
+L12n1739(1,1)(0,0)(-1,1) False
+L12n1739(1,1)(0,0)(1,1) True
+L12n1739(1,1)(0,0)(-1,2) True
+L12n1739(1,1)(0,0)(1,2) True
+L12n1739(-1,2)(0,0)(-1,1) True
+L12n1739(-1,2)(0,0)(1,1) False
+L12n1739(-1,2)(0,0)(-1,2) True
+L12n1739(-1,2)(0,0)(1,2) True
+L12n1739(1,2)(0,0)(-1,1) False
+L12n1739(1,2)(0,0)(1,1) True
+L12n1739(1,2)(0,0)(-1,2) True
+L12n1739(1,2)(0,0)(1,2) True
+L12n1739(-1,3)(0,0)(-1,1) True
+L12n1739(-1,3)(0,0)(1,1) False
+L12n1739(-1,3)(0,0)(-1,2) True
+L12n1739(-1,3)(0,0)(1,2) True
+L12n1739(1,0)(0,0)(-1,1) False
+L12n1739(1,0)(0,0)(1,1) True
+L12n1739(1,0)(0,0)(-1,2) True
+L12n1739(-1,1)(0,0)(-1,1) True
+L12n1739(1,1)(0,0)(-1,1) False
+L12n1739(-1,2)(0,0)(-1,1) True
+L12n1739(1,2)(0,0)(-1,1) False
+L12n1739(1,3)(0,0)(-1,1) True
+L12n1739(1,4)(0,0)(-1,1) True
+L12n1739(-1,1)(0,0)(1,1) False
+L12n1739(1,1)(0,0)(1,1) True
+L12n1739(-1,2)(0,0)(1,1) False
+L12n1739(-1,3)(0,0)(1,1) False
+L12n1739(-1,4)(0,0)(1,1) True
+L12n1739(-1,5)(0,0)(1,1) True
+L12n1739(-1,1)(0,0)(-1,2) True
+L12n1739(1,1)(0,0)(-1,2) True
+L12n1739(-1,2)(0,0)(-1,2) True
+L12n1739(1,2)(0,0)(-1,2) True
+L12n1739(-1,3)(0,0)(-1,2) True
+L12n1739(1,3)(0,0)(-1,2) True
+L12n1739(-1,1)(0,0)(1,2) True
+L12n1739(1,1)(0,0)(1,2) True
+L12n1739(-1,2)(0,0)(1,2) True
+L12n1739(1,2)(0,0)(1,2) True
+L12n1739(-1,3)(0,0)(1,2) True
+L12n1739(-1,4)(0,0)(1,2) True
+</span></div></div></div></div><div style="margin-bottom:10px"><div style="display:flex;flex-direction:row;align-items:stretch"><div style="color:#303F9F;min-width:7em;font-family:monospace;text-align:right;padding-right:5px">In [<!-- -->10<!-- -->]:</div><div style="width:100%;border-radius:2px;position:relative;overflow-x:auto;border:1px solid rgb(207, 207, 207)"><pre class="CodeMirror cm-s-default  CodeMirror-wrap" style="width:100%;overflow-x:auto;line-height:normal;height:auto;font-size:inherit;margin-bottom:0;padding:4px;white-space:pre-wrap;word-wrap:break-word;word-break:normal;border:0;background:white"><div style="margin-left:0"><span class="cm-variable">still_unclear</span><span>
+</span></div></pre></div></div><div style="display:flex;flex-direction:row;align-items:stretch" cocalc-test="cell-output"><div class="ant-btn ant-btn-default" style="border-color:transparent;font-size:inherit;padding:0;display:flex;flex-direction:column;height:auto"><div style="color:#D84315;min-width:7em;font-family:monospace;text-align:right;padding-right:5px;padding-bottom:2px">Out[<!-- -->10<!-- -->]:</div><div style="flex:1"></div> </div><div style="flex:1;overflow-x:auto;line-height:normal;background-color:#fff;border:0;margin-bottom:0;margin-left:1px" class="cocalc-jupyter-rendered"><div style="white-space:pre-wrap;word-wrap:break-word;font-family:monospace;padding-top:5px;padding-bottom:5px"><span>[[(-1, 1), (0, 0), (-1, 1)],
+ [(-1, 1), (0, 0), (1, 1)],
+ [(1, 1), (0, 0), (-1, 1)],
+ [(-1, 2), (0, 0), (1, 1)],
+ [(1, 2), (0, 0), (-1, 1)],
+ [(-1, 3), (0, 0), (1, 1)],
+ [(1, 0), (0, 0), (-1, 1)],
+ [(1, 1), (0, 0), (-1, 1)],
+ [(1, 2), (0, 0), (-1, 1)],
+ [(-1, 1), (0, 0), (1, 1)],
+ [(-1, 2), (0, 0), (1, 1)],
+ [(-1, 3), (0, 0), (1, 1)]]</span></div></div></div></div><div style="margin-bottom:10px"><div style="display:flex;flex-direction:row;align-items:stretch"><div style="color:#303F9F;min-width:7em;font-family:monospace;text-align:right;padding-right:5px"></div><div style="width:100%"><p><span>Thus we are left with 13 knots in the family which are probably not hyperbolic.</span></p><p><span>Actually, SnapPy recognizes all of them as hyperbolic or torus knots.</span></p></div></div><div></div></div><div style="margin-bottom:10px"><div style="display:flex;flex-direction:row;align-items:stretch"><div style="color:#303F9F;min-width:7em;font-family:monospace;text-align:right;padding-right:5px">In [<!-- -->11<!-- -->]:</div><div style="width:100%;border-radius:2px;position:relative;overflow-x:auto;border:1px solid rgb(207, 207, 207)"><pre class="CodeMirror cm-s-default  CodeMirror-wrap" style="width:100%;overflow-x:auto;line-height:normal;height:auto;font-size:inherit;margin-bottom:0;padding:4px;white-space:pre-wrap;word-wrap:break-word;word-break:normal;border:0;background:white"><div style="margin-left:0"><span class="cm-keyword">for</span><span> </span><span class="cm-variable">s</span><span> </span><span class="cm-keyword">in</span><span> </span><span class="cm-variable">still_unclear</span><span>:</span><span>
+</span><span>    </span><span class="cm-variable">L</span><span>.</span><span class="cm-variable">dehn_fill</span><span>(</span><span class="cm-variable">s</span><span>)</span><span>
+</span><span>    </span><span class="cm-variable">F</span><span>=</span><span class="cm-variable">L</span><span>.</span><span class="cm-variable">filled_triangulation</span><span>(</span><span>)</span><span>
+</span><span>    </span><span class="cm-builtin">print</span><span>(</span><span class="cm-variable">L</span><span>,</span><span class="cm-variable">F</span><span>.</span><span class="cm-variable">identify</span><span>(</span><span>)</span><span>)</span><span>
+</span></div></pre></div></div><div style="display:flex;flex-direction:row;align-items:stretch" cocalc-test="cell-output"><div class="ant-btn ant-btn-default" style="border-color:transparent;font-size:inherit;padding:0;display:flex;flex-direction:column;height:auto"><div style="color:#D84315;min-width:7em;font-family:monospace;text-align:right;padding-right:5px;padding-bottom:2px">Out[<!-- -->11<!-- -->]:</div><div style="flex:1"></div> </div><div style="flex:1;overflow-x:auto;line-height:normal;background-color:#fff;border:0;margin-bottom:0;margin-left:1px" class="cocalc-jupyter-rendered"><div style="white-space:pre-wrap;word-wrap:break-word;font-family:monospace;padding-top:5px;padding-bottom:5px"><span>L12n1739(-1,1)(0,0)(-1,1) [m016(0,0), K3_1(0,0), K12n242(0,0)]
+L12n1739(-1,1)(0,0)(1,1) [10_124(0,0), K10n21(0,0)]
+L12n1739(1,1)(0,0)(-1,1) [8_19(0,0), K8n3(0,0)]
+L12n1739(-1,2)(0,0)(1,1) [8_19(0,0), K8n3(0,0)]
+L12n1739(1,2)(0,0)(-1,1) [5_1(0,0), K5a2(0,0)]
+L12n1739(-1,3)(0,0)(1,1) [5_1(0,0), K5a2(0,0)]
+L12n1739(1,0)(0,0)(-1,1) [10_124(0,0), K10n21(0,0)]
+L12n1739(1,1)(0,0)(-1,1) [8_19(0,0), K8n3(0,0)]
+L12n1739(1,2)(0,0)(-1,1) [5_1(0,0), K5a2(0,0)]
+L12n1739(-1,1)(0,0)(1,1) [10_124(0,0), K10n21(0,0)]
+L12n1739(-1,2)(0,0)(1,1) [8_19(0,0), K8n3(0,0)]
+L12n1739(-1,3)(0,0)(1,1) [5_1(0,0), K5a2(0,0)]
+</span></div></div></div></div><div style="margin-bottom:10px"><div style="display:flex;flex-direction:row;align-items:stretch"><div style="color:#303F9F;min-width:7em;font-family:monospace;text-align:right;padding-right:5px"></div><div style="width:100%"><p><span>All the above knots are torus knots (or hyperbolic in the case of K12n242):</span></p><p><span>K5a2 = T(5,2)</span></p><p><span>K8n3 = T(4,3)</span></p><p><span>K10n21 = T(5,3)</span></p></div></div><div></div></div><div style="margin-bottom:10px"><div style="display:flex;flex-direction:row;align-items:stretch"><div style="color:#303F9F;min-width:7em;font-family:monospace;text-align:right;padding-right:5px"></div><div style="width:100%"><p><span>In total we have shown the statement from Proposition 3.1.(1): K_nm is hyperbolic for any (n,m) except for (n,m)=(-1,k) for k an integer, or (n,m)=(0,0),(0,-1),(0,-2),(-2,1),(-2,0),(-2,-1)</span></p><p><span>And in all the above non-hyperbolic cases K_nm is a torus knot.</span></p></div></div><div></div></div></div></div>
+</body>

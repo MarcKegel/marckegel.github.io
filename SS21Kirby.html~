@@ -1,0 +1,245 @@
+<html>
+<HEAD>
+<TITLE>Lecture 4-Manifolds and Kirby calculus</TITLE>
+</HEAD>
+
+
+<BODY BGCOLOR="#FFFFFF">
+
+<CENTER>
+<FONTSIZE="+3"><B>4-Manifolds and Kirby calculus</B> </FONT> <P> 
+
+2 hours lecture + 1 hour exercise session<p>
+(In der Pr&uuml;fungsordnung erscheint diese Vorlesung unter Modul M39: Spezielle Themen der Mathematik)<p>
+<a href="index.html">Marc Kegel</a><p>
+Summer term 2021<p>
+</CENTER>
+
+<hr>
+<br>
+<b><font color="red">Important:</font></b> It might be obvious for most, but apparently it seems not to be obvious for anyone: 
+If you want to take part in the digital oral on Friday, 15. October, I need your email to set up an exact time and to send you the zoom link. If you have not contacted be mail before, you need to do so as soon as possible. <br><br>
+
+
+<hr>
+<br>
+
+<b>Lecture:</b> Fridays 9:15 - 10:45, online via Zoom<br>
+Veranstaltungsnummer: 3314437<br>
+First lecture: 16.04.2021<p>
+
+<b>Exercise session:</b> Fridays, every other week, 11:00 - 12:30, online via Zoom<br>
+Veranstaltungsnummer: 3314437<br>
+First exercise session: 23.04.2020<p>
+
+<b>Office hours / further discussion:</b> after the lectures/exercise sessions<p>
+
+There will be no Moodle page for this lecture. Instead the Zoom links will appear at this webpage and anyone interested in the lecture may join directly from here.<br> 
+<b>Zoom meeting info:</b>  <a href="ZoomMeetingInfoKirby.html">click here for Zoom meeting info</a> <p>
+
+
+<b>Mailling list:</b> If you would like to receive information about this course by email via a mailing list, please send me a short email so I can add you to 
+the mailing list.
+
+<hr>
+<br>
+
+<b>Announcements:</b> 
+<ul>
+
+<li><i>19.06.2020</i>: This will be a BMS course and the language of the lecture will be English.
+</li>
+
+<li><i>26.01.2021</i>: The first lecture will take place in the week of 12th of April. The lectures will be conducted via Zoom. Everyone is welcome to participate. Further details and information on this 
+ will appear on this webpage as soon as they are available to me.
+</li>
+
+</ul>
+
+<hr>
+<br>
+
+<b>Content:</b> 
+The goal of Kirby calculus, named after the American mathematician Robion Kirby, is to study smooth compact 4-manifolds by splitting them into simple pieces. This 
+simple pieces, so-called handles, are (after smoothing the corners) all diffeomorphic to 4-balls. All information about the original 4-manifold is therefore contained in the 
+gluing maps of these simple pieces. <br><br>
+
+First we will examine the same procedure in three dimensions. This will then lead to the notion of a Heegaard diagram of a 3-manifold, a 2-dimensional diagram, 
+in which all the information of the 3-manifold is encoded.<br><br>
+
+One dimension higher we will display all the information of a smooth compact 4-manifold (or its 3-dimensional boundary) in a so-called Kirby diagram. The term
+Kirby calculus is then generally used to describe the modifications of such diagrams that do not change the diffeomorphism type of the corresponding 4-manifolds (or their 3-dimensional 
+boundaries).<br><br>
+
+This lecture is aimed at all students of mathematics with basic knowledge in topology and can also be used as preparation for a 
+thesis in the field of topology. <br><br>
+
+
+<b>Prerequisites:</b> Prerequisites are the introductory lectures (Analysis I, II and Linear Algebra I, II) and basic notions from point set topology (covered in the module Topology I). Results from algebraic topology 
+(fundamental group, homology theory) and differential topology are useful, but they are not needed for the understanding of the lecture. <br><br>
+
+
+
+
+<hr>
+<br>
+
+<b><font color="red">Exam:</font></b> The exam will be oral and take place at the mornings of Monday, 19. July and Friday, 15. October. 
+The content of the exam will be Chapters 1-8 (including Chapter 8) and the corresponding exercise sheets.<br>
+<font color="red">Criterion for admission to the final examination:</font> For this lecture an admission restriction to the final examination 
+is not permitted. Nevertheless, I would like to encourage you to regularly work on the exercise sheets. I recommend taking the exam if at least 
+50% of the exercises have been solved correctly.
+
+
+
+<hr>
+<br>
+
+
+
+<b>Exercise sheets:</b><br>
+<a href="21SSKirby/sheet1.pdf">Exercise sheet 1 (pdf)</a> <br>
+<a href="21SSKirby/sheet2.pdf">Exercise sheet 2 (pdf)</a> <br>
+<a href="21SSKirby/sheet3.pdf">Exercise sheet 3 (pdf)</a> <br>
+<a href="21SSKirby/sheet4.pdf">Exercise sheet 4 (pdf)</a> <br>
+<a href="21SSKirby/sheet5.pdf">Exercise sheet 5 (pdf)</a> <br>
+<a href="21SSKirby/sheet6.pdf">Exercise sheet 6 (pdf)</a> <br>
+<a href="21SSKirby/sheet7.pdf">Exercise sheet 7 (pdf)</a> <br>
+
+
+<br>
+
+<hr>
+<br>
+
+
+<b>Table of Contents:</b> (tentative)<br><br>
+
+<b>1. Overview:</b><br><br>
+
+<b>2. Manifolds and handle decompositions:</b><br>
+2.1. Manifolds<br>
+2.2. Handle decompositions<br><br>
+
+<b>3. Dimension 3: Heegaard splittings:</b><br>
+3.1. Heegaard diagrams<br>
+3.2. Handle slides and stabilizations<br><br>
+
+<b>4. Dimension 4: Kirby diagrams:</b><br>
+4.1. Kirby diagrams<br>
+4.2. Linking numbers and framings<br>
+4.3. The intersection form and the homology of 2-handlebodies<br>
+4.4. Topological 4-manifolds<br><br>
+
+<b>5. Kirby calculus:</b><br>
+5.1. Handle slides<br>
+5.2. Handle cancellations<br><br>
+
+<b>6. Dehn surgery:</b><br>
+6.1. Surgery and handle bodies<br>
+6.2. Dehn surgery<br>
+6.3. Kirby's theorem<br><br>
+
+<b>7. Stabilization theorems for simply connected 4-manifolds</b><br><br>
+
+<b>8. The dotted circle notation of 1-handles</b><br><br>
+
+<b>9. Cobordisms:</b><br>
+9.1. The cobordism ring<br>
+9.2. The h-cobordism theorem and the proof of the higher dimensional Poincar&eacute; conjecture<br><br>
+
+<b>10. Exotic 4-manifolds</b><br>
+10.1. Slice knots<br>
+10.2. The Bennequin bound<br>
+10.3. Exotic copies of R<sup>4</sup><br>
+10.4. The adjunction inequality<br>
+10.5. Compact exotic 4-manifolds<br><br>
+
+<b>If time permits: Trisections and Morse-2-functions</b><br><br>
+
+<hr>
+<br>
+
+
+<b>Lecture notes:</b> The notes of the lecture can be viewed via the following <a href="https://1drv.ms/u/s!AjhcHi01JrMRgVb9QfZqwGtEXDJW">OneNote link</a> or as a 
+<a href="21SSKirby/4-Manifolds and Kirby calculus.pdf">pdf</a>. (Obviously, these notes do not contain everything that was said in the lecture and therefore do not replace in any way the attendance of the lecture and an own transcript).<br><br>
+
+<b>Notes from the exercise session:</b> The notes from the exercise sessions can be viewed via the following <a href="https://1drv.ms/u/s!AjhcHi01JrMRgWH5o7ChTUkBE58J">OneNote link</a> or as a 
+<a href="21SSKirby/4-Manifolds and Kirby calculus - Exercises.pdf">pdf</a>.
+(These notes are even more sketchy than the lecture notes and will not replace your own solutions of the exercises). <br><br>
+
+<b>Evaluation:</b> The results of the evaluation can be view here: 
+<a href="21SSKirby/3314437_SpezielleThemenderMathematikM394-ManifoldsandKirbycalculus_Lehrendendetails.pdf">lecture</a> and 
+<a href="21SSKirby/3314437_SpezielleThemenderMathematikM394-ManifoldsandKirbycalculus_UEbungsgruppendetails.pdf">exercise session</a>.
+
+
+
+
+
+<hr>
+<br>
+
+<b>Literature:</b><br>
+
+We will mainly follow chapters 4 and 5 from the standard reference by Gompf and Stipsicz:<br>
+<b>R. Gompf and A. Stipsicz:</b> 4-Manifolds and Kirby Calculus, AMS, 1999, available online <a href="http://www.ams.org/books/gsm/020/">here</a>.<br><br>
+
+Below are some more references for further reading.
+
+
+More references on the Kirby calculus:<br>
+<b>S. Akbulut:</b> 4-manifolds, Oxford University Press, 2016.<br>
+<b>H. Geiges:</b> How to depict 5-dimensional manifolds, Jahresbericht der DMV, 2017, available online at the <a href="https://arxiv.org/abs/1704.00919">ArXiv</a>.<br>
+<b>R. Kirby:</b> The Topology of 4-Manifolds, Springer-Verlag, 1989.<br>
+<br>
+
+With applications in contact and symplectic geometry:<br>
+<b>B. Ozbagci und A. Stipsicz:</b> Surgery on Contact 3-Manifolds and Stein Surfaces, Springer-Verlag, 2004.<br>
+<br>
+
+3-manifolds, Heegaard splittings and surgery descriptions:<br>
+<b>V. Prasolov and A. Sossinsky:</b> Knots, Links, Braids and 3-Manifolds, AMS, 1997, available online <a href="http://www.ams.org/books/mmono/154/">here</a>.<br>
+<b>D. Rolfsen:</b> Knots and Links, Publish or Perish, 1976, available online <a href="https://www.ams.org/books/chel/346/">here</a>. Before you look into Rolfsen's book I also recommend reading the following
+ <a href="https://projecteuclid.org/euclid.bams/1183539447">review</a> on it. <br>
+<br>
+
+For more information on handle decompositions of surfaces you may also consult:<br>
+<b>C. Wengler:</b> Skript zur Topologie I, 2019, available online <a href="https://www2.mathematik.hu-berlin.de/~kegemarc/19SSTopologie/Skript.pdf">here</a>.<br>
+<br>
+
+General on 4-manifolds:<br>
+<b>A. Scorpan:</b> The wild world of 4-manifolds, AMS, 2005.<br>
+<br>
+
+Trisections:<br>
+<b>D. Gay and R. Kirby:</b> Trisecting 4-manifolds, <i>Geom. Topol.</i>, <b>20</b> (2016), 3097-3132.<br>
+<b>D. Gay:</b> From Heegaard splittings to trisections; porting 3-dimensional ideas to dimension 4, available online <a href="https://arxiv.org/abs/1902.01797">arxiv1902.01797</a>.
+<br>
+
+Morse theory:<br>
+<b>Y. Matsumoto:</b> An Introduction to Morse Theory, American Mathematical Society, 2002, available online <a href="https://www.ams.org/books/mmono/208/">here</a>.<br>
+<b>J. Milnor:</b> Morse Theory, Princeton University Press, 1963, available online <a href="https://www.jstor.org/stable/j.ctv3f8rb6">here</a>.<br>
+<br>
+
+Differential topology:<br>
+<b>T. Bröcker, K. Jänich:</b> Einführung in die Differentialtopologie, Springer.<br>
+<br>
+
+Algebraic topology:<br>
+<b>S. Friedl:</b> Lecture notes for Algebraic Topology I-IV, available online at his
+<a href="https://www.uni-regensburg.de/Fakultaeten/nat_Fak_I/friedl/">homepage</a>.<br>
+<b>A. Hatcher:</b> Algebraic topology, available online at his <a href="https://www.math.cornell.edu/~hatcher/AT/ATpage.html">homepage</a>.<br>
+<b>C. Wendl:</b> Lecture notes for Topologie I and II, available online at his <a href="https://www.mathematik.hu-berlin.de/~wendl/Winter2018/Topologie2/">homepage</a>.<br>
+
+
+
+
+<p>
+<p>
+<br>
+<p>
+<br>
+
+<p><a href="index.html">back</a> </p>
+</body>
+</html>

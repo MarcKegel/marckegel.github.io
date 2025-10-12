@@ -1,0 +1,285 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+<TITLE>Vorlesung Differentialgeometrie I</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF">
+
+<CENTER>
+<FONTSIZE="+3"><B>Vorlesung Differentialgeometrie I</B> </FONT> <P> 
+
+4 Stunden Vorlesung + 2 Stunden Übung<p>
+<a href="index.html">Marc Kegel</a><p>
+Wintersemester 2022/2023<p>
+</CENTER>
+
+
+
+
+
+
+<hr>
+<br>
+
+<b>Vorlesung:</b> Dienstag 11:15-12:45 in Raum 1.115 (RUD 25)
+Mittwochs 9:15-10:45 in Raum 3.007 (RUD 25)<br>
+Beginn: 18.10.2022<p>
+
+<b>Übung:</b> Mittwochs 11:00-12:30 in Raum 1.115 (RUD 25)<br>
+<b>Übungsleiter:</b> <a href="https://sites.google.com/view/naageswaran-manikandan">Naageswaran Manikandan</a> (naageswaran.manikandan at student.hu-berlin.de)<br>
+Beginn: 26.10.2022<p>
+
+<b>Sprechstunde / weitere Diskussion:</b> nach den Vorlesungen / Übungen<p>
+ 
+
+
+
+
+<hr>
+<br>
+
+
+<b>Ankündigungen:</b> 
+<ul>
+
+
+<li><i>22.09.2022</i>: Die Vorlesung wird auf Deutsch gehalten. Die Übung findet auf Englisch statt. Da weiterführende Vorlesungen im Master üblicherweise auf Englisch gehalten werden, können so schon jetzt die nötigen Fachbegriffe im Englischen eingeübt werden.
+</li>
+<li><i>22.09.2022</i>: Ab der zweiten Vorlesungswoche findet Mittwochs die Vorlesung von 9:15-10:45 und die Übung von 11:00-12:30 statt.
+</li>
+
+<li><i>31.01.2023</i>: <font color="red"> Informationen zum Zeitplan in den letzten Wochen:</font> Die letzte Vorlesung und die letzte Übung finden am 8.2. zu den üblichen Zeiten statt. Die Vorlesung am 14.2. (einen Tag vor der Klausur) entfällt. 
+Stattdessen findet zur gleichen Zeit und im gleichen Raum die Vorbesprechung zum <a href="SS23SeminarHypKnotTheory.html">Seminar über hyperbolische Knotentheorie</a> statt, welches direkt im Anschluss an diese Vorlesung belegt werden kann.
+Am 8.2. um 16:00 biete ich eine Fragestunde zum Vorlesungsstoff in Raum 1.315 (RUD 25) an, welche auch als Vorbereitung zur Klausur dienen kann. Die Klausureinsicht findet am 16.2. um 10:30 in Raum 1.318 (RUD 25) statt.
+Abschnitt 8.4 ist nicht klausurrelevant.
+</li>
+
+</ul>
+
+
+
+<hr>
+<br>
+
+<b>Inhalt:</b> 
+    
+Im ersten Teil der Vorlesung werden wir uns mit der klassischen Theorie von Kurven und Flächen im dreidimensionalen Raum beschäftigen. Im Zentrum dieser Theorie stehen diverse Krümmungsgrößen von Flächen. Damit werden wir zum Beispiel beweisen, dass es nicht möglich ist eine exakte Karte (eines Teils) der Erdoberfläche zu erstellen.<br>
+    
+Als Hauptziel dieses ersten Teils werden wir das Theorema Egregium diskutieren, welches die zunächst extrinsisch - d.h. mit Hilfe des umgebenden 3-dimensionalen Raumes - definierte Gauß-Krümmung in Wirklichkeit als eine intrinsische Größe identifiziert, d.h. die Gauß-Krümmung kann von "2-dimensionalen" Bewohnern der Fläche bestimmt werden ohne dabei den umgebenden Raum zu nutzen. Mit dem Satz von Gauß-Bonnet wird dieser Zusammenhang weiter vertieft, indem ein Zusammenhang zwischen lokaler Geometrie und globaler Topologie von Flächen hergestellt wird. Grob gesprochen besagt dieser Satz, daß man durch intrinsische Messung der Krümmung entscheiden kann auf welcher Fläche man sich befindet.<br>
+    
+Im zweiten Teil werden diese Begriffe auf höhere Dimensionen ausgeweitet. Dafür wird eine Einführung in die Theorie der Riemannschen Mannigfaltigkeiten gegeben. Diese Räume bilden die Grundlage für weite Teile der modernen Mathematik und Physik.   <br><br>
+
+
+
+ <br><br>
+
+<p>
+
+<b>Voraussetzungen:</b> Vorausgesetzt werden die Anfängervorlesungen (Analysis I, II und Lineare Algebra I, II).<br>
+
+
+<p>
+
+
+<b>Klausur:</b> Die Abschlu&szlig;pr&uuml;fung findet in Form einer schriftlichen Prüfung am Mittwoch den 15.02.2023 von 09:00 bis 
+11:00 Uhr in Raum 1.013 (RUD 25) statt. <br>
+<b>Nachklausur:</b> Die Nachklausur findet in Form einer schriftlichen Prüfung am Freitag den 14.04.2023 von 10:00 bis 12:00 
+Uhr in Raum 1.013 (RUD 25) statt. <br>
+<b>Kriterium f&uuml;r die Zulassung zur Abschlu&szlig;pr&uuml;fung:</b> Ich empfehle die Teilnahme 
+an der Klausur, wenn mindestens 50% der Übungsaufgaben sinnvoll bearbeitet wurden.<br>
+Wie man sinnvoll ein Übungsblatt bearbeitet, wird zum Beispiel sehr gut von Prof. Manfred Lehn auf seiner 
+<a href="https://www.agtz.mathematik.uni-mainz.de/wie-bearbeitet-man-ein-uebungsblatt-von-prof-dr-manfred-lehn/">Homepage</a> erklärt. 
+
+
+
+<hr>
+<br>
+
+
+
+<b>&Uuml;bungsbl&auml;tter:</b><br>
+<a href="22WSDiffgeoI/blatt1.pdf">Übungsblatt 1 (pdf)</a>; Lösungsskizzen zu einigen Aufgaben von Blatt 1 finden Sie <a href="22WSDiffgeoI/Diff.Geo 1 Tutorial.pdf">hier.</a>  <br>
+<a href="22WSDiffgeoI/blatt2.pdf">Übungsblatt 2 (pdf)</a> <br>
+<a href="22WSDiffgeoI/blatt3.pdf">Übungsblatt 3 (pdf)</a> <br> 
+<a href="22WSDiffgeoI/blatt4.pdf">Übungsblatt 4 (pdf)</a> <br> 
+<a href="22WSDiffgeoI/blatt5.pdf">Übungsblatt 5 (pdf)</a> <br> 
+<a href="22WSDiffgeoI/blatt6.pdf">Übungsblatt 6 (pdf)</a> <br> 
+<a href="22WSDiffgeoI/blatt7.pdf">Übungsblatt 7 (pdf)</a> <br> 
+<a href="22WSDiffgeoI/blatt8.pdf">Übungsblatt 8 (pdf)</a> <br> 
+<a href="22WSDiffgeoI/blatt9.pdf">Übungsblatt 9 (pdf)</a> <br> 
+<a href="22WSDiffgeoI/blatt10.pdf">Übungsblatt 10 (pdf)</a> <br> 
+<a href="22WSDiffgeoI/blatt11.pdf">Übungsblatt 11 (pdf)</a> <br> 
+<a href="22WSDiffgeoI/blatt12.pdf">Übungsblatt 12 (pdf)</a> (Die Reihenfolge der Teilaufgaben in Aufgabe 1 wurde leicht abgeändert.)<br> 
+<a href="22WSDiffgeoI/blatt13.pdf">Übungsblatt 13 (pdf)</a> <br> 
+
+<br>
+
+Die Übungsblätter werden immer Dienstags in der Vorlesung veröffentlich. Sie haben dann eine Woche Zeit die Aufgaben zu lösen bevor diese dann in der darauffolgenden Woche in den Übungen besprochen werden. 
+Eine Abgabe der Lösungen ist leider nicht möglich. 
+
+
+<br>
+
+<hr>
+<br>
+
+Die Ergebnisse der Evaluation finden Sie <a href="22WSDiffgeoI/3314409_DifferentialgeometrieIM13_Lehrendendetails.pdf">hier</a>.<br>
+
+<br>
+<hr>
+<br>
+
+<b>Inhaltsverzeichnis:</b> <br><br>
+
+<b>0. Überblick</b><br><br>
+
+<b>1. Lokale Kurventheorie</b><br><br>
+
+<b>2. Globale Theorie ebener Kurven - Der Umlaufsatz</b><br><br>
+
+<b>3. Lokale Flächentheorie:</b><br>
+3.1. Flächenstücke, Tangentialebene<br>
+3.2. Flächen, differenzierbare Funktionen<br>
+3.3. Die erste Fundamentalform<br>
+3.4. Normalkrümmung, geodätische Krümmung, Ableitungsgleichungen<br>
+3.5. Geodätische<br>
+3.6. Parallelismus<br>
+3.7. Die zweite Fundamentalform und die Weingarten-Abbildung<br>
+3.8. Krümmungsbegriffe<br>
+3.9. Minimalflächen<br>
+3.10. Isometrien<br>  
+3.11. Das Theorema Egregium<br><br>
+
+<b>4. Globale Flächentheorie:</b><br>
+4.1. Eine Charakterisierung der Sphäre<br>
+4.2. Geodätische Parallelkoordinaten<br>
+4.3. Der lokale Satz von Gauß-Bonnet<br>
+4.4. Euler-Charakteristik und der globale Satz von Gauß-Bonnet<br>
+4.5. Eiflächen<br>
+4.6. Vektorfelder auf Flächen - Der Poincaré-Hopfsche Indexsatz<br><br>
+
+<b>5. Differential Topologie:</b><br>
+5.1. Differenzierbare Mannigfaltigkeiten<br>
+5.2. Der Tangentialraum und das Differential<br>
+5.3. Der Whitneysche Einbettungssatz<br>
+5.4. Das Tangentialbündel<br>
+5.5. Vektorfelder und die Lie-Klammer<br><br>
+
+<b>6. Riemannsche Geometrie:</b><br>
+6.1. Riemannsche Metriken<br>
+6.2. Kovariante Ableitungen und der Levi-Civita-Zusammenhang<br>
+6.3. Geodätische<br>
+6.4. Der Riemannsche Krümmungstensor<br>
+6.5. Jacobifelder und konjugierte Punkte<br>
+6.6. Der Satz von Hopf-Rinow<br><br>
+
+<b>7. Algebraische Topologie:</b><br>
+7.1. Fundamentalgruppe und Homotopie<br>
+7.2. Überlagerungen und Berechnungen von Fundamentalgruppen<br>
+7.3. Gruppenwirkungen und die Decktransformationsgruppe<br>
+7.4. Anwendungen<br><br>
+
+<b>8. Geometrie, Topologie und Dynamik:</b><br>
+8.1. Krümmung und Fundamentalgruppe<br>
+8.2. Existenz von geschlossenen Geodätischen<br>
+8.3. Die Klassifikation von Raumformen<br>
+8.4. Ausblick: Geometrisierung von 2- und 3-Mannigfaltigkeiten<br><br>
+
+
+<br>
+
+
+Im Anschluss an diese Vorlesung wird im Sommersemester 2023 von <a href="https://www.mathematik.hu-berlin.de/de/forschung/forschungsgebiete/mathematische-physik/borot-mp-homepage">Prof. Borot</a> die Vorlesung 
+Differentialgeometrie II angeboten. Desweiteren wird es ein <a href="SS23SeminarHypKnotTheory.html">Seminar über hyperbolische Knotentheorie</a> geben, welches direkt im Anschluss an diese Vorlesung belegt werden kann. 
+
+
+<hr>
+
+<br>
+<b>Ergänzendes Material:</b><br><br>
+
+Eine Animation zum Beweis des Umlaufsatzes: <a href="https://mathematik.com/Hopf/">https://mathematik.com/Hopf/</a><br><br>
+
+Animationen zum Frenet-Serret-Dreibein finden Sie <a href="http://www.math.byu.edu/~math302/content/learningmod/trihedron/trihedron.html">hier</a>
+oder auf <a href="https://en.wikipedia.org/wiki/Frenet%E2%80%93Serret_formulas">Wikipedia</a>.<br><br>
+
+Weitere Informationen zu Minimalflächen finden Sie zum Beispiel auf <a href="https://de.wikipedia.org/wiki/Minimalfl%C3%A4che">Wikipedia</a>.<br>
+Interaktive Modelle von Minimalflächen sind auf der <a href="https://vanderbei.princeton.edu/WebGL/minsurf.html">Webseite</a> von <a href="https://vanderbei.princeton.edu/">Robert Vanderbei</a> zu finden.<br><br>
+
+Weitere Informationen zu den <a href="https://de.wikipedia.org/wiki/M%C3%BCggelberge">Berliner Müggelbergen</a> und der Vermessungsgeschichte des Berliner Umlandes finden 
+Sie <a href="https://geobasis-bb.de/lgb/de/presse/pressemitteilung/~30-06-2022-vermessungsgeschichte-zum-anfassen">hier</a>. <br><br>
+
+
+
+
+
+<hr>
+
+<br>
+<b>Literatur:</b><br><br>
+
+Diese Vorlesung wird sich zum Teil an der Vorlesung von H. Geiges orientieren. Hier finden sie eine Auswahl von ergänzender oder weiterführender Literatur. <br><br>
+
+
+<b>C. Bär:</b> Elementare Differentialgeometrie, de Gruyter, 2001.<br>
+<b>H. Baum:</b> Skript zu Differentialtopologie I, erhältlich online <a href="https://www.mathematik.hu-berlin.de/~baum/Skript/diffgeo1.pdf">hier</a>.<br>
+<b>M. do Carmo:</b> Differentialgeometrie von Kurven und Flächen, Vieweg, 1983.<br>
+<b>P. Dombrowski:</b> 150 years after Disquisitiones generales circa superficies curvas, Société Mathématique de France, 1979.<br>
+<b>H. Geiges:</b> Elementare Differentialgeometrie, Vorlesung gehalten an der Universität zu Köln.<br>
+<b>R. Millman, G. Parker:</b> Elements of Differential Geometry, Prentice Hall, 1977.<br>
+<b>C. Wendl:</b> Skript zu Differentialtopologie I und II, erhältlich online auf seiner <a href="https://www.mathematik.hu-berlin.de/~wendl/Winter2021/Diffgeo1/">Homepage</a>.<br><br>
+
+<b>Differential Topologie:</b><br>
+<b>T. Bröcker and K. Jänich:</b>  Einführung in die Differentialtopologie, Springer, 1973.<br>
+<b>V. Guillemin and A. Pollack:</b>  Differential topology, Prentice-Hall, 1974.<br>
+<b>M. Hirsch:</b>  Differential topology, Springer, 1976.<br>
+<b>J. Milnor:</b>  Topology from the Differentiable Viewpoint, The University Press of Virginia, 1965.<br><br>
+
+<b>Riemannische Geometrie:</b> <br>
+<b>M. Berger:</b>  A panoramic view of Riemannian geometry. Springer, 2003.<br>
+<b>M. do Carmo:</b>  Riemannian Geometry, Birkhäuser, 1992.<br>
+<b>S. Gallot, Dominique Hulin, Jacques Lafontaine:</b>  Riemannian Geometry, Springer, 1990.<br>
+<b>P. Petersen:</b>  Riemannian geometry, Springer, 2006.<br><br>
+
+<b>Algebraische Topologie:</b> <br>
+<b>M. Armstrong:</b>  Basic Topology, Springer, 1983.<br>
+<b>S. Friedl:</b>  Lecture notes for Algebraic Topology I-IV, erhältlich online auf seiner <a href="https://friedl.app.uni-regensburg.de/">Homepage</a>.<br>
+<b>A. Fomenko and D. Fuchs:</b>  Homotopical topology, Springer, 2016.<br>
+<b>K. Jänich:</b>  Topologie, Springer, 1996.<br>
+<b>C. Wengler:</b>  Skript zur Topologie I, 2019, erhältlich online <a href="https://www.mathematik.hu-berlin.de/~kegemarc/19SSTopologie.html">hier</a>.<br><br>
+
+<b>Geometrisierung von niedrigdimensionalen Mannigafltigkeiten:</b> <br>
+<b>B. Martelli:</b> An Introduction to Geometric Topology, erhältlich online auf dem <a href="https://arxiv.org/abs/1610.02592">arXiv</a>.<br>
+<b>P. Scott:</b> The geometries of 3-manifolds, Bull. London Math. Soc. 15 (1983), 401–487.<br>
+<b>W. Thurston:</b> Three-dimensional manifolds, Kleinian groups and hyperbolic geometry, Bulletin of the American Mathematical Society, 357–381.<br> 
+<b>W. Thurston:</b> Three-dimensional geometry and topology, Princeton University Press, 1997. <br>
+<b>W. Thurston:</b> The Geometry and Topology of Three-Manifolds, 1980 Princeton lecture notes.<br>
+
+<br>
+<br>
+
+
+
+
+
+<br>
+<p>
+<br>
+
+
+
+
+
+
+<p>
+<p>
+<br>
+<p>
+<br>
+
+<p><a href="index.html">zurück</a> </p>
+</body>
+</html>
+

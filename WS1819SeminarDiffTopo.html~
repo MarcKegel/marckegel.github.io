@@ -1,0 +1,331 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+
+<TITLE>Seminar zur Differentialtopologie</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF">
+
+<CENTER>
+<FONTSIZE="+3"><B> Seminar zur Differentialtopologie</B> </FONT> <P> 
+
+<a href="index.html">Marc Kegel</a><p>
+Wintersemester 2018/2019<p>
+Dienstags <font color="red">9:15-10:45</font> in Raum 3.008 (Rudower Chaussee 25)<p>
+<b>Veranstaltungsnummer:</b> 	3314428<p>
+</CENTER>
+
+<hr>
+<br>
+
+<b>Inhalt:</b> 
+Die Differentialtopologie ist das Studium von sogenannten Mannigfaltigkeiten und glatten Abbildungen zwischen diesen. Mannigfaltigkeiten sind topologische Räume, die lokal wie der Euklidische Raum aussehen. Solche Räume treten in 
+vielen verschiedenen Bereichen natürlich auf, zum Beispiel als Riemannsche Flächen in der Funktionentheorie, als Konfigurationsräume von Gelenken, als Lie-Gruppen in der Algebra und der Geometrie, als Raum-Zeit in der 
+Relativitätstheorie, als Phasenräume und Energiehyperflächen in der klassischen Mechanik usw. In solchen Beispielen tragen Mannigfaltigkeiten oft eine zusätzliche geometrische Struktur, wie zum Beispiel eine Riemannsche Metrik, 
+eine komplexe oder symplektische Struktur. In der Differentialtopologie studiert man differenzierbare Mannigfaltigkeiten an sich, ohne diese weiteren Strukturen zu berücksichtigen.<br><br>
+
+In diesem Seminar wollen wir Milnors Meisterwerk "Topology from the Differential Viewpoint" [M] folgen und zuerst die notwendigen Grundlagen der Differentialtopologie erarbeiten und uns dann mit einigen anschaulichen aber nicht trivialen 
+Sätzen der Differentialtopologie beschäftigen. Anders als sonst oft üblich benutzt Milnor keine Kombinatorik oder Algebra um solche tiefen topologischen Resultate zu beweisen, sondern bedient sich nur elementaren Techniken der Analysis 
+aus den Grundvorlesungen. Dabei spielt eine elegante differentialtopologische Definition des Brouwerschen Abbildungsgrads einer glatten Abbildung die Hauptrolle. <br><br>
+
+Mithilfe dieser Definition des Abbildungsgrads (oder ähnlichen Techniken) werden wir zum Beispiel den Brouwerschen Fixpunktsatz beweisen, der besagt, dass jede glatte Abbildung einer n-Scheibe auf sich selbst mindestens einen Fixpunkt haben muss, und einen 
+Satz von Hopf diskutieren, nach dem zwei stetige Abbildungen einer n-dimensionalen Mannigfaltigkeit in die n-Sphäre genau dann homotop sind, wenn sie den gleichen Abbildungsgrad haben. Weiter werden wir einen überraschenden 
+Zusammenhang zwischen den Nullstellen eines Vektorfeldes und der Euler-Charakteristik herstellen.<br>
+
+<p>
+
+<b>Voraussetzungen:</b> Vorausgesetzt werden etwas mengentheoretische Topologie und elementare Analysis im Rahmen der Anfängervorlesungen.<br>
+Grundkenntnisse in Topologie (z.B. im Umfang der Vorlesung <a href="https://www.mathematik.hu-berlin.de/~wendl/Sommer2018/Topologie1/">Topologie I</a> von Prof. Chris Wendl aus dem letzten Semester) 
+sind hilfreich, aber nicht zwingend erforderlich.<br>
+
+<p>
+
+<b>Zielgruppe:</b> 
+Die Zielgruppe dieses Seminars sind Studierende aus dem Monobachelorstudiengang (ca. 5. Semester), die ihre Kenntnisse aus der Vorlesung 
+<a href="https://www.mathematik.hu-berlin.de/~wendl/Sommer2018/Topologie1/">Topologie I</a> von Prof. Chris Wendl aus dem letzten Semester vertiefen möchten. Notwendig für die Teilnahme und das Verständnis dieses Seminars sind 
+aber nur die Anfängervorlesungen, weswegen auch alle anderen Studierenden mit Interesse an Topologie willkommen sind.<br><br>
+
+Ergänzend zu diesem Seminar (aber unabhängig davon) bieten sich die Vorlesung <a href="https://www.mathematik.hu-berlin.de/~wendl/Winter2018/Topologie2/">Topologie II</a> von Prof. Chris Wendl, in der unter anderem der Abbildungsgrad auch aus homologischer Seite beleuchtet wird, sowie die 
+Vorlesung Differentialgeometrie I von Prof. Helga Baum an, in der hauptsächlich die Eigenschaften von Riemannsche Metriken auf differenzierbaren Mannigfaltigkeiten studiert werden. <br>
+
+<p>
+
+<b>Sprache:</b> Das Seminar kann auf Wunsch der Teilnehmer auch auf Englisch angeboten werden.<br>
+
+<p>
+
+Um Studienpunkte für dieses Seminar zu erhalten, sollte man einen Vortrag (nicht länger als 90 Minuten) halten und gut leserliche Vortragsnotizen bis spätestens eine Woche nach seinem Vortrag einreichen. <br>
+
+<p>
+
+<b>Announcements:</b> 
+<ul>
+<li><i>16.10.2018</i>: Since we have international students in the Seminar without good German skills most talks will be in English. 
+However, if someone feels really uncomfortable by giving his/her talk in English (or if some international student 
+wants to practice his/her German) some talks can also be held in German. 
+</li>
+<li><i>23.10.2018</i>: There will be an extra talk at the end of the semester by Paulina Bock de Barillas on "the 
+Whitney-Graustein theorem and the eversion of the 2-sphere" (see below). The exact date and place will be announced soon.
+</li>
+<li><i>1.11.2018</i>: The extra talk will be on 13.02.19, 9:00-10:30 in RUD 25, Raum 1.114.
+</li>
+
+</ul>
+
+
+
+
+<hr>
+<br>
+
+
+
+<b>Vorträge:</b>
+
+<TABLE cellspacing=6 cellpadding=6><tr>
+<td colspan=8 height=20 valign="bottom"></td></tr>
+
+<tr>
+<td valign="top">16.10.18</td>
+<td valign="top">Vorbesprechung und Vergabe der Themen <br>
+</td>
+</tr>
+
+<tr>
+<td valign="top">23.10.18</td>
+<td valign="top">Glatte Mannigfaltigkeiten [Mi, Seiten 1-7], [GP, Abschnitt 1.1-1.3], 
+<a href="WS18Seminar/Anke_Bianchi.pdf">scanned notes (pdf)</a><br>
+<font color="blue">Anke-Bilke Bianchi</font><br>
+</td>
+</tr>
+
+<tr>
+<td valign="top">30.10.18</td>
+<td valign="top">Reguläre Werte und der Brouwersche Fixpunktsatz [Mi, Seiten 7-15], [GP, Abschnitt 2.1-2.2], 
+<a href="WS18Seminar/Konstantin_Krenz.pdf">scanned notes (pdf)</a><br>
+<font color="blue">Konstantin Krenz</font><br>
+</td>
+</tr>
+
+<tr>
+<td valign="top">06.11.18</td>
+<td valign="top">Der Abbildungsgrad modulo 2 [Mi, Kapitel 4], [GP Abschnitt 2.4], 
+<a href="WS18Seminar/Karl_Lehrer.pdf">scanned notes (pdf)</a><br>
+<font color="blue">Karl Lehrer</font><br>
+</td>
+</tr>
+
+<tr>
+<td valign="top">13.11.18</td>
+<td valign="top">Orientierung und ganzzahliger Abbildungsgrad [Mi, Kapitel 5], [GP, Abschnitt 3.1-3.3], 
+<a href="WS18Seminar/Max_Weiss.pdf">scanned notes (pdf)</a><br>
+<font color="blue">Max Weiss</font><br>
+</td>
+</tr>
+
+<tr>
+<td valign="top">20.11.18</td>
+<td valign="top">Vektorfelder und die Euler-Charakteristik [Mi, Kapitel 6], [GP, Abschnitt 3.5 und 3.7], 
+<a href="WS18Seminar/Fethi_Ayaz.pdf">scanned notes (pdf)</a><br>
+<font color="blue">Fethi Ayaz</font><br>
+</td>
+</tr>
+
+<tr>
+<td valign="top">27.11.18</td>
+<td valign="top">Die Pontrjagin-Konstruktion [Mi, Kapitel 7], [GP, Abschnitt 3.6], <a href="WS18Seminar/Jens_Luecke.pdf">scanned notes (pdf)</a><br>
+<font color="blue">Jens Lücke</font><br>
+</td>
+</tr>
+
+<tr>
+<td valign="top">04.12.18</td>
+<td valign="top">Transversalität [GP, Abschnitt 1.5 und 2.3], <a href="WS18Seminar/Anh_Duc_Vu.pdf">scanned notes (pdf)</a><br>
+<font color="blue">Anh Duc Vu</font><br>
+</td>
+</tr>
+
+<tr>
+<td valign="top">11.12.18</td>
+<td valign="top">Der Jordansche Kurvensatz und der Jordan-Brouwer-Zerlegungssatz [GP, Abschnitt 2.5], <a href="WS18Seminar/Laetitia_de_Abreu_Nunes.pdf">scanned notes (pdf)</a><br>
+<font color="blue">Laetitia de Abreu Nunes</font><br>
+</td>
+</tr>
+
+<tr>
+<td valign="top">18.12.18</td>
+<td valign="top">Der Satz von Borsuk-Ulam [GP, Abschnitt 2.6], [Ma, Abschnitt 2.1, 2.2 und 3.1], <a href="WS18Seminar/Leo_Duc.pdf">scanned notes (pdf)</a><br>
+<font color="blue">L&eacute;o Duc</font><br>
+</td>
+</tr>
+
+<tr>
+<td valign="top">08.01.19</td>
+<td valign="top">Die Fixpunktformel von Lefschetz [GP, Abschnitt 3.4], <a href="WS18Seminar/Sarah_Pestkowski.pdf">scanned notes (pdf)</a><br>
+<font color="blue">Sarah Pestkowski</font><br>
+</td>
+</tr>
+
+<tr>
+<td valign="top">15.01.19</td>
+<td valign="top">Nash-Gleichgewichte [Na], <a href="WS18Seminar/Catalina_Jurja.pdf">scanned notes (pdf)</a><br>
+<font color="blue">Catalina Jurja</font><br>
+</td>
+</tr>
+
+<tr>
+<td valign="top">22.01.19</td>
+<td valign="top">Beweis des Satzes von Sard [BJ, Kapitel 6], [Mi, Kapitel 3], [GP Abschnitt 1.7], <a href="WS18Seminar/Tillmann_Cebulla.pdf">scanned notes (pdf)</a><br>
+<font color="blue">Tillmann Cebulla</font><br>
+</td>
+</tr>
+
+<tr>
+<td valign="top">29.01.19</td>
+<td valign="top">Abstrakte Mannigfaltigkeiten [BJ, Kapitel 1 und 2], <a href="WS18Seminar/Hannes_Driebusch.pdf">scanned notes (pdf)</a><br>
+<font color="blue">Hannes Driebusch</font><br>
+</td>
+</tr>
+
+<tr>
+<td valign="top">05.02.19</td>
+<td valign="top">Der Einbettungssatz von Whitney I [Hi, Abschnitt 1.3], <a href="WS18Seminar/Elif_Selcen_Undar.pdf">scanned notes (pdf)</a><br>
+<font color="blue">Elif Selcen Ündar</font><br>
+</td>
+</tr>
+
+
+
+<tr>
+<td valign="top">12.02.19</td>
+<td valign="top">Der Einbettungssatz von Whitney II [GP, Abschnitt 1.8], <a href="WS18Seminar/Lev_Chechulin.pdf">scanned notes (pdf)</a><br>
+<font color="blue">Lev Chechulin</font><br>
+</td>
+</tr>
+
+
+
+<tr>
+<td valign="top"><font color="red">13.02.19</font></td>
+<td valign="top"><font color="red">9:00-10:30 in RUD 25, Raum 1.114</font><br>
+Das Whitney-Graustein Theorem und die Umstülpung der 2-Sphäre [Wh], [BB], [Le], <a href="WS18Seminar/Paulina_Bock_de_Barillas.pdf">scanned notes (pdf)</a><br>
+<font color="blue">Paulina Bock de Barillas</font><br>
+</td>
+</tr> 
+
+
+
+</TABLE>
+
+<br>
+<br>
+
+
+
+
+
+<br>
+<p>
+<br>
+
+<b>Literatur:</b><br>
+
+Wir werden hauptsächlich dem Buch von Milnor [Mi] folgen. Zusätzliches Material ist in dem Buch von Guillemin und Pollack [GP] zu finden.
+
+<TABLE cellspacing=6 cellpadding=6><tr>
+<td colspan=8 height=20 valign="bottom"></td></tr>
+
+<tr>
+<td valign=top>[BB]</td>
+<td valign=top>A. Bednorz and W. Bednorz,
+Analytic sphere eversion with minimum of topological events, <a href="https://arxiv.org/abs/1711.10466">arXiv:1711.10466</a>.<br>
+</tr>
+
+<tr>
+<td valign=top>[BJ]</td>
+<td valign=top>T. Bröcker und K. Jänich,
+<i>Einführung in die Differentialtopologie</i>, Springer, 1973.<br>
+</tr>
+
+<tr>
+<td valign=top>[GP]</td>
+<td valign=top>V. Guillemin and A. Pollack,
+<i>Differential topology</i>, Prentice-Hall, 1974.<br>
+</tr>
+
+<tr>
+<td valign=top>[Hi]</td>
+<td valign=top>M. Hirsch,
+<i>Differential topology</i>, Springer, 1976.<br>
+</tr>
+
+<tr>
+<td valign=top>[Le]</td>
+<td valign=top>S. Levy,
+Making Waves: A Guide to the Ideas Behind <a href="https://www.youtube.com/watch?v=wO61D9x6lNY">Outside In</a>, 
+<a href="http://www.geom.uiuc.edu/docs/outreach/oi/">www.geom.uiuc.edu/docs/outreach/oi/</a>.<br>
+</tr>
+
+<tr>
+<td valign=top>[Ma]</td>
+<td valign=top>J. Matou&scaron;ek,
+<i>Using the Borsuk-Ulam theorem</i>, Springer, 2003.<br>
+</tr>
+
+<tr>
+<td valign=top>[Mi]</td>
+<td valign=top>J. Milnor,
+<i>Topology from the Differentiable Viewpoint</i>, The University Press of Virginia, 1965.<br>
+</tr>
+
+<tr>
+<td valign=top>[Na]</td>
+<td valign=top>J. Nash,
+Non-cooperative games, <i>Ann. of Math. (2)</i>, <b>54</b> (1951), 286-295.<br>
+</tr>
+
+
+<tr>
+<td valign=top>[Wh]</td>
+<td valign=top>H. Whitney,
+On regular closed curves in the plane, <i>Compositio Math.</i>, <b>4</b> (1937), 276-284.<br>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+</TABLE>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>
+<p>
+<br>
+<p>
+<br>
+
+<p><a href="index.html">zurück</a> </p>
+</body>
+</html>
+
+

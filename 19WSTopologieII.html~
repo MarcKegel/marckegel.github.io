@@ -1,0 +1,295 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+
+<TITLE>Lecture Topology II</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF">
+
+<CENTER>
+<FONTSIZE="+3"><B>Lecture Topology II</B> </FONT> <P> 
+
+4 hours lecture + 2 hours exercise session<p>
+<a href="index.html">Marc Kegel</a><p>
+Winter term 2019/2020<p>
+</CENTER>
+
+
+
+
+
+
+
+<hr>
+<br>
+
+<b>Lecture:</b> Wednesdays 13:15-14:45 in room 1.013 (RUD 25) and Fridays 9:15-10:45 in room 1.013 (RUD 25)<br>
+Veranstaltungsnummer: 3314430<br>
+First lecture: 16.10.2019<p>
+
+<b>Exercise session:</b> Fridays 11:00-12:30 in room 1.013 (RUD 25)<br>
+Veranstaltungsnummer: 33144301<br>
+First exercise session: 18.10.2019<p>
+
+ 
+
+
+
+
+
+
+
+<hr>
+<br>
+<b>Announcements:</b> 
+<ul>
+
+<li><i>11.06.2019</i>: The first lecture will take place on Wednesday 16.10.2019.
+</li>
+<li><i>11.06.2019</i>: This course is a BMS course and is therefore held in English.
+<li><i>23.07.2019</i>: To avoide collisions with other lectures the time and place of the lecture has changed.
+<li><i>23.09.2019</i>: Lecture notes from last semesters course on Topology I are now available further down on this page.
+<li><i>15.10.2019</i>: On Friday 18.10. there will be no exercise session, instead there wil be an additional lecture. 
+On Wednesday 23.10. there will be an exercise session instead of the lecture.
+<li><i>18.10.2019</i>: Since the old room was far too small, the Friday lecture and the exercise session will take place in room 1.013 (starting from next week).
+<li><i>29.11.2019</i>: The lecture on Wednesday 4.12. will be cancelled and (if necessary) added at the end of the semester.
+<li><i>27.01.2020</i>: Exam: The exam will take place at Wednesday, 4.3.2020, 09:00-11:00 in room 0'313 (RUD 26). 
+Please register for it in due time. You can have a look in your exam at Friday, 6.3.2020, 10:00-11:00 in room 0'318 (RUD 26).
+<li><i>14.01.2020</i>: In the winter term 2020/2021 an advanced seminar on 
+<a href="WS2021SeminarAlgTopo.html">selected topics of algebraic and differential topology</a> 
+will be offered, 
+in which further topics will be discussed, which were not discussed in this lecture due to lack of time.
+<li><i>14.01.2020</i>: In the summer term 2020 a two-hour lecture on <a href="SS203mfds.html">3-manifolds</a> will be offered, in which we will 
+investigate methods to present and analyze 3-manifolds.
+<li><i>09.05.2020</i>: The second exam will take place at 2. June 2020 at 8:00 as a take home exam, you will get all details via e-mail.
+
+</li>
+</ul>
+
+
+
+<hr>
+<br>
+
+<b>Content:</b> This is the continuation of my lecture <a href="19SSTopologie.html">Topologie I</a> from the summer term. It is aimed at the audience of that lecture and 
+other interested students with a basic knowledge of topology. In this second part we will analyze CW complexes and study higher homotopy 
+groups, more general homology theories and cohomology theory and discuss further applications of these theories. <br><br>
+
+<br>
+
+<p>
+
+<b>Prerequisites:</b> Prerequisites are the introductory lectures (Analysis I, II and Linear Algebra I, II), 
+elementary algebra (groups, homomorphisms, rings, etc.), and the lecture Topology I (in particular the fundamental group and simplicial homology).<br>
+
+
+<p>
+
+
+<b>Exam:</b> The exam will take place at Wednesday, 4.3.2020, 09:00-11:00 in room 0'313 (RUD 26).<br>
+<b><font color="red">Second exam:</b> The second exam takes places at Tuesday, 2.6.2020, online (see information above).</font><br>
+Criterion for admission to the final examination: For this lecture an admission restriction to the final examination 
+is unfortunately not permitted. Nevertheless, I would like to encourage you to regularly work on the exercise sheets. I recommend taking the exam if at least 
+50% of the exercises have been solved correctly.
+
+
+
+<hr>
+<br>
+
+
+
+<b>Exercise sheets:</b><br>
+<a href="19WSTopologyII/blatt1.pdf">Sheet 1 (pdf)</a> <br>
+<a href="19WSTopologyII/blatt2.pdf">Sheet 2 (pdf)</a> <br>
+<a href="19WSTopologyII/blatt3.pdf">Sheet 3 (pdf)</a> <br>
+<a href="19WSTopologyII/blatt4.pdf">Sheet 4 (pdf)</a> <br>
+<a href="19WSTopologyII/blatt5.pdf">Sheet 5 (pdf)</a> <br>
+<a href="19WSTopologyII/blatt6.pdf">Sheet 6 (pdf)</a> <br>
+<a href="19WSTopologyII/blatt7.pdf">Sheet 7 (pdf)</a> <br>
+<a href="19WSTopologyII/blatt8.pdf">Sheet 8 (pdf)</a> (A typo in Exercise 2 has been corrected. It should be the wedge sum instead of the Cartesian product.)<br>
+<a href="19WSTopologyII/blatt9.pdf">Sheet 9 (pdf)</a> <br>
+<a href="19WSTopologyII/blatt10.pdf">Sheet 10 (pdf)</a> <br>
+<a href="19WSTopologyII/blatt11.pdf">Sheet 11 (pdf)</a> <br>
+<a href="19WSTopologyII/blatt12.pdf">Sheet 12 (pdf)</a> <br>
+<a href="19WSTopologyII/blatt13.pdf">Sheet 13 (pdf)</a> <br>
+<a href="19WSTopologyII/blatt14.pdf">Sheet 14 (pdf)</a> <br>
+<a href="19WSTopologyII/blatt15.pdf">Sheet 15 (pdf)</a> <br>
+
+<br>
+
+<hr>
+<br>
+
+
+
+<b>Table of Contents:</b> (tentative)<br><br>
+
+<b>1. Categories and Functors</b><br><br>
+
+<b>2. Homotopy groups:</b><br>
+2.1. Definition, functoriality and first computations<br>
+2.2. Homotopy groups of spheres<br>
+2.3. Relative homotopy groups and the long exact sequence of a pair<br>
+2.4. The Hopf fibration and the long exact sequence of a fibration<br><br>
+
+<b>3. Singular homology:</b><br>
+3.1. Definition and functoriality<br>
+3.2. Relative homology groups<br>
+3.3. The long exact sequence of a pair<br>
+3.4. Excision<br>
+3.5. The Jordan-Brouwer splitting theorem<br>
+3.6. The Eilenberg-Steenrod axioms<br><br>
+
+<b>4. Cellular homology:</b><br>
+4.1. CW complexes<br>
+4.2. Cellular homology groups<br>
+4.3. Equivalence of cellular homology and singular homology<br>
+4.4. The local degree of a map<br>
+4.5. Proof of Whitehead's theorem<br>
+4.6. Proof of Hurewicz's theorem<br><br>
+
+<b>5. Homology with coefficients</b><br>
+5.1. Tensor products<br>
+5.2. Homology with coefficients<br>
+5.3. The Tor functor and the universal coefficient theorem<br>
+5.4. Künneth's formula and the homology of a cartesian product<br>
+5.5. Persistent homology and topological analysis of data<br><br>
+
+<b>6. The cohomology ring:</b><br>
+6.1. Dualizing a chain complex <br>
+6.2. The universal coefficient theorem for cohomology<br>
+6.3. Singular and cellular cohomology<br>
+6.4. Graded Rings<br>
+6.5. The cup product<br>
+6.6. Calculations of cohomology rings<br>
+6.7. Cross products and Künneth's formula for cohomology<br>
+6.8. The dimension of real division algebras<br><br>
+
+<b>7. Poincar&eacute; duality:</b><br>
+7.1. The cap product and the Poincar&eacute; isomorphism<br>
+7.2. First applications of Poincar&eacute; duality<br>
+7.3. Poincar&eacute; duality via simplicial cohomology<br>
+7.4. Cohomology with compact support<br>
+7.5. The general proof of Poincar&eacute; duality<br><br>
+
+<b>8. Smooth manifolds and intersection forms:</b><br>
+8.1. The intersection form and classification of manifolds<br>
+8.2. Tangent spaces and transverse intersections<br>
+8.3. Algebraic intersection numbers and the intersection form<br><br>
+
+<!--<b>Further possible topics: De Rham cohomology and de Rham's theorem, homotopy and cohomology,
+the linking form, other homology and cohomology theories </b><br><br>-->
+
+
+<hr>
+<br>
+<b>Lecture notes from last semesters course on Topology I:</b><br><br>
+
+Carolin Wengler has made the effort to format her lecture notes from the last semester lovingly with LaTeX and 
+kindly made them available to me. (If you find errors, including smaller typos, please report them to me, such that I can correct them.)<br><br>
+
+<a href="19SSTopologie/Skript.pdf">Carolin Wengler's lecture notes (pdf)</a> (in German)<br><br>
+
+
+<b>Evaluation:</b> The results of the evaluation can be view here: 
+<a href="19WSTopologyII/VLUE_33144301_Kegel_Marc_TopologieIIM14.pdf">lecture</a> and 
+<a href="19WSTopologyII/UE_33144301_Kegel_Marc_TopologieIIM14.pdf">exercise session</a>.<br>
+
+
+
+<hr>
+<br>
+<b>Literature:</b><br><br>
+
+For the basics from the last semester (point set topology, fundamental group and simplicial homology theory) I recommend the books by M. Armstrong and K. Jänich.
+
+A very popular textbook on (algebraic) topology is the book by A. Hatcher. In addition, I would also like to recommend you the 
+lecture notes by S. Friedl and C. Wendl, and the books by G. Bredon and A. Fomenko and D. Fuchs.<br><br>
+
+ 
+<b>M. Armstrong:</b> Basic Topology, Springer, 1983.<br>
+<b>G. Bredon:</b> Topology and geometry, Springer, 1993.<br>
+<b>S. Friedl:</b> Lecture notes for Algebraic Topology I-IV, available online at his
+<a href="https://www.uni-regensburg.de/Fakultaeten/nat_Fak_I/friedl/">homepage</a>.<br>
+<b>A. Fomenko and D. Fuchs:</b> Homotopical topology, Springer, 2016.<br>
+<b>A. Hatcher:</b> Algebraic topology, available online at his <a href="https://www.math.cornell.edu/~hatcher/AT/ATpage.html">homepage</a>.<br>
+<b>K. Jänich:</b> Topologie, Springer, 1996.<br>
+<b>C. Wendl:</b> Lecture notes for Topologie I and II, available online at his <a href="https://www.mathematik.hu-berlin.de/~wendl/Winter2018/Topologie2/">homepage</a>.<br>
+
+<br>
+<br>
+
+Further material in supplement or parallel to the lecture:<br><br>
+
+
+
+
+We did not discussed a proof of the smooth (generalized) Schoenflies theorem, since it uses differential topology and is thus not really fitting into the topic 
+of this lecture. However, the proof uses a beutiful argument which is not too hard to understand. A proof can be found (apart from the original works) for 
+example in:<br>
+<b>A. Putman:</b> The generalized Schoenflies theorem, available online at his <a href="https://www3.nd.edu/~andyp/notes/">homepage</a>.<br> <br>
+
+Some animations parallel to the constructions via pictures in lecture can be found here:<br>
+
+An animation visualizing the construction of <a href="https://www.youtube.com/watch?v=Pe2mnrLUYFU">Alexander's horned sphere</a>.<br>
+
+A visualization of the <a href="https://www.youtube.com/watch?v=AKotMPGFJYk">Hopf fibration</a>. <br>
+
+Some interesting 3D-animations (mostly fitting to last semesters topics) can be found on Neil Strickland's 
+<a href="http://neil-strickland.staff.shef.ac.uk/courses/MAS435/demos/">webpage</a>.<br>
+For details about Boy's embedding of the real projective plane into Euclidean 3-space I suggest:<br>
+The <a href="https://www.youtube.com/watch?v=uiq-EcQz_uU">Youtube video</a> by Jos Leys,<br>
+the <a href="https://www.math.univ-toulouse.fr/~cheritat/boy-surface/index.html">construction method</a> by Arnaud Ch&eacute;ritat, and <br>
+the short <a href="http://www.ams.org/notices/200710/tx071001306p.pdf">article</a> by Robion Kirby.<br><br>
+
+For more information about persistent homology I recommend the book by Edelsbrunner and Harer (assuming no prior knowledge in topology) and the book project by 
+Polterovich, Rosen, Samvelyan and Zhang.<br>
+
+<b>H. Edelsbrunner and J. Harer:</b> Computational Topology - An Introduction, AMS, 2010.<br>
+<b>L. Polterovich, D. Rosen, K. Samvelyan and J. Zhang:</b> Topological Persistence in Geometry and Analysis, available online 
+<a href="https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxwb2x0ZXJvdnxneDo1YThlMjkzYmJlOWQ4YjRj">here</a>.<br><br><br>
+
+
+
+For further reading I suggest the above mentioned Skript by S. Friedl and the book by A. Fomenko and D. Fuchs. For information on 4-manifold the book by 
+A. Scorpan is a good starting point. For more general differential topology I suggest:<br>
+
+<b>T. Bröcker and K. Jänich:</b> Einführung in die Differentialtopologie, Springer, 1973.<br>
+<b>V. Guillemin and A. Pollack:</b> Differential topology, Prentice-Hall, 1974.<br>
+<b>M. Hirsch:</b> Differential topology, Springer, 1976.<br>
+<b>J. Milnor:</b>Topology from the Differentiable Viewpoint, The University Press of Virginia, 1965.<br>
+<b>A. Scorpan:</b> The wild world of 4-manifolds, AMS, 2005.<br>
+
+
+
+
+
+<br>
+<p>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>
+<p>
+<br>
+<p>
+<br>
+
+<p><a href="index.html">back</a> </p>
+</body>
+</html>
+

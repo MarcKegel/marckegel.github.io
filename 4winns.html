@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ 
+    <title>Connect Four on the Klein bottle</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen, projection" />
+  </head>
+  <body>
+  
+  <center><h1>Connect Four on the Klein bottle (4 gewinnt auf der Kleinschen Flasche)</h1></center>
+  <br>
+<p>
+<br>
+  
+  
+    <div id="wrapper">
+        <div id="head">
+            <p class="title">4WIN</p>    
+			 <p class="titleAuthor">by Hendrik & Marc</p>  
+        </div>
+        <div id="jsframe">
+            <div id="jsframe1">
+                <canvas id="overCanvas" width="650" height="500"></canvas>
+            </div>
+            <div id="jsframe2">
+                <canvas id="myCanvas" width="650" height="500"></canvas>
+                <script language="javascript" type="text/javascript" src="jsmain.js"></script>
+                <script>
+                    start();
+                </script>
+            </div>
+        </div>
+        <div id="sidebar">
+            <h1 id="blueVsRed">Blau vs. Rot(Computer)</h1>
+            <p> </p>
+            <p><button onclick="button1()">Start 1P</button>
+                <button onclick="button2()">Start 2P</button>
+            </p>
+            <p id="theturn">Blau beginnt</p>
+            <p id="tipp1">-</p>
+            <p id="tipp2">-</p>
+            <p><button onclick="goBack()">Zurück</button>
+            </p>
+            <h1> Settings </h1>
+            <table>
+                <tr>
+                    <th>Level: </th>
+                    <th><p id="cpLevel"> Medium </p></th>
+                    <th><p> <button onclick="levelDown()"><</button>
+                            <button onclick="levelUp()">></button>
+                        </p>
+                    </th>
+                </tr>
+                <tr>
+                    <th>Start: </th>
+                    <th><p id="startColor"> Blau </p></th>
+                    <th><p> <button onclick="startChange()"><  ></button>
+                        </p>
+                    </th>
+                </tr>
+                <tr>
+                    <th>Tipps: </th>
+                    <th><p id="tipps"> keine </p></th>
+                    <th><p> <button onclick="tippsChange()"><  ></button>
+                        </p>
+                    </th>
+                </tr>
+            </table>
+            <p> <button onclick="restartGame()">Restart Game</button></p>
+        </div>
+        <div id="footer">
+            <p id="console">Hier kommt die Ausgabe</p>
+            <p id="console2">Hier kommt die Ausgabe2</p>
+        </div>
+    </div>
+	<br>
+<p>
+<br>
+	<center>
+	<p>This is a version of the famous boardgame <a href="https://en.wikipedia.org/wiki/Connect_Four">Connect Four</a> (<a href="https://de.wikipedia.org/wiki/Vier_gewinnt">Vier gewinnt</a>) but played on the <a href="https://en.wikipedia.org/wiki/Klein_bottle">Klein bottle</a> (<a href="https://de.wikipedia.org/wiki/Kleinsche_Flasche">Kleinsche Flasche</a>).</p>
+<p>The upper and lower boundary pieces of the game board are identified orientation preserving but the left and right boundary pieces are identified in such a way that the resulting surface is not orientable. More detailed rules and descriptions will follow.</p>
+<p>Code by <a href="http://www.mi.uni-koeln.de/~heherrma/">Hendrik Herrmann</a></p>
+	
+	<br>
+<p>
+<br>
+	
+	<p><a href="index.html">back to the main page</a></p></center>
+  </body>

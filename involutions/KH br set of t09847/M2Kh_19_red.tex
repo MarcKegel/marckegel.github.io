@@ -1,0 +1,34 @@
+\documentclass[border=1bp]{standalone}
+\usepackage{amssymb,amsmath,array,diagbox}
+\newcommand{\Rone}{\mathbb{Z}_{2}}
+\newcommand{\Rmor}[1]{(\mathbb{Z}_{2})^{#1}}
+\newcommand{\Tone}[1]{\mathbb{Z}_{#1}}
+\newcommand{\Tmor}[2]{(\mathbb{Z}_{#1})^{#2}}
+\newcommand{\Zero}{$0$}
+\begin{document}
+\setlength\extrarowheight{2pt}
+\begin{tabular}{|c||c|c|c|c|c|c|c|c|c|c|}
+\hline
+\backslashbox{\!$q$\!}{\!$h$\!} & $-9$ & $-8$ & $-7$ & $-6$ & $-5$ & $-4$ & $-3$ & $-2$ & $-1$ & $0$ \\
+\hline
+\hline
+$-4$  &   &   &   &   &   &   &   &   & $ \Rone $ & $ \Rone $ \\
+\hline
+$-6$  &   &   &   &   &   &   &   & $ \Rmor{2} $ &   &   \\
+\hline
+$-8$  &   &   &   &   &   &   & $ \Rmor{3} $ & $ \Rone $ &   &   \\
+\hline
+$-10$  &   &   &   &   &   & $ \Rmor{4} $ & $ \Rone $ &   &   &   \\
+\hline
+$-12$  &   &   &   &   & $ \Rmor{4} $ & $ \Rone $ &   &   &   &   \\
+\hline
+$-14$  &   &   &   & $ \Rmor{4} $ & $ \Rone $ &   &   &   &   &   \\
+\hline
+$-16$  &   &   & $ \Rmor{3} $ &   &   &   &   &   &   &   \\
+\hline
+$-18$  &   & $ \Rmor{2} $ &   &   &   &   &   &   &   &   \\
+\hline
+$-20$  & $ \Rone $ &   &   &   &   &   &   &   &   &   \\
+\hline
+\end{tabular}
+\end{document}

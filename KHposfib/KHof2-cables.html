@@ -1,0 +1,1249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN"
+        "HTMLFiles/xhtml-math11-f.dtd">
+
+<!-- Created with the Wolfram Language : www.wolfram.com -->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <title>
+  KHof2-cables
+ </title>
+ <link href="HTMLFiles/KHof2-cables.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<p class="Text">
+ In this notebook we will compute Khovanov homology of (2,0)- and (2,1)-cable of 2-stranded torus knots. First we do it with Z-coefficients, then for some more with Q-coefficients and for some more with Z_2-coefficients.
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/KHof2-cables_1.png" alt="KHof2-cables_1.png" width="106" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_2.png" alt="KHof2-cables_2.png" width="456" height="37" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/KHof2-cables_3.png" alt="KHof2-cables_3.png" width="734" height="414" style="vertical-align:middle" />
+</p>
+
+<p class="Message">
+ <img src="HTMLFiles/KHof2-cables_4.png" alt="KHof2-cables_4.png" width="824" height="13" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_5.png" alt="KHof2-cables_5.png" width="415" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_6.png" alt="KHof2-cables_6.png" width="415" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_7.png" alt="KHof2-cables_7.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_8.png" alt="KHof2-cables_8.png" width="415" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_9.png" alt="KHof2-cables_9.png" width="415" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_10.png" alt="KHof2-cables_10.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_11.png" alt="KHof2-cables_11.png" width="415" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_12.png" alt="KHof2-cables_12.png" width="415" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_13.png" alt="KHof2-cables_13.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_14.png" alt="KHof2-cables_14.png" width="415" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_15.png" alt="KHof2-cables_15.png" width="415" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_16.png" alt="KHof2-cables_16.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_17.png" alt="KHof2-cables_17.png" width="422" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_18.png" alt="KHof2-cables_18.png" width="422" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_19.png" alt="KHof2-cables_19.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_20.png" alt="KHof2-cables_20.png" width="422" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_21.png" alt="KHof2-cables_21.png" width="422" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_22.png" alt="KHof2-cables_22.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_23.png" alt="KHof2-cables_23.png" width="422" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_24.png" alt="KHof2-cables_24.png" width="422" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_25.png" alt="KHof2-cables_25.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_26.png" alt="KHof2-cables_26.png" width="422" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_27.png" alt="KHof2-cables_27.png" width="422" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_28.png" alt="KHof2-cables_28.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_29.png" alt="KHof2-cables_29.png" width="422" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_30.png" alt="KHof2-cables_30.png" width="422" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_31.png" alt="KHof2-cables_31.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_32.png" alt="KHof2-cables_32.png" width="422" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_33.png" alt="KHof2-cables_33.png" width="422" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_34.png" alt="KHof2-cables_34.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_35.png" alt="KHof2-cables_35.png" width="422" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_36.png" alt="KHof2-cables_36.png" width="422" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_37.png" alt="KHof2-cables_37.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_38.png" alt="KHof2-cables_38.png" width="422" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_39.png" alt="KHof2-cables_39.png" width="422" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_40.png" alt="KHof2-cables_40.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_41.png" alt="KHof2-cables_41.png" width="422" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_42.png" alt="KHof2-cables_42.png" width="422" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_43.png" alt="KHof2-cables_43.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_44.png" alt="KHof2-cables_44.png" width="422" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_45.png" alt="KHof2-cables_45.png" width="422" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_46.png" alt="KHof2-cables_46.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_47.png" alt="KHof2-cables_47.png" width="422" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_48.png" alt="KHof2-cables_48.png" width="422" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_49.png" alt="KHof2-cables_49.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_50.png" alt="KHof2-cables_50.png" width="422" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_51.png" alt="KHof2-cables_51.png" width="422" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_52.png" alt="KHof2-cables_52.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_53.png" alt="KHof2-cables_53.png" width="422" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_54.png" alt="KHof2-cables_54.png" width="422" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_55.png" alt="KHof2-cables_55.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_56.png" alt="KHof2-cables_56.png" width="422" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_57.png" alt="KHof2-cables_57.png" width="422" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_58.png" alt="KHof2-cables_58.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_59.png" alt="KHof2-cables_59.png" width="422" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_60.png" alt="KHof2-cables_60.png" width="422" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_61.png" alt="KHof2-cables_61.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_62.png" alt="KHof2-cables_62.png" width="422" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_63.png" alt="KHof2-cables_63.png" width="422" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_64.png" alt="KHof2-cables_64.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/KHof2-cables_65.png" alt="KHof2-cables_65.png" width="4" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/KHof2-cables_66.png" alt="KHof2-cables_66.png" width="4" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/KHof2-cables_67.png" alt="KHof2-cables_67.png" width="4" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/KHof2-cables_68.png" alt="KHof2-cables_68.png" width="734" height="414" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_69.png" alt="KHof2-cables_69.png" width="362" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_70.png" alt="KHof2-cables_70.png" width="362" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_71.png" alt="KHof2-cables_71.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_72.png" alt="KHof2-cables_72.png" width="362" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_73.png" alt="KHof2-cables_73.png" width="362" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_74.png" alt="KHof2-cables_74.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_75.png" alt="KHof2-cables_75.png" width="362" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_76.png" alt="KHof2-cables_76.png" width="362" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_77.png" alt="KHof2-cables_77.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_78.png" alt="KHof2-cables_78.png" width="362" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_79.png" alt="KHof2-cables_79.png" width="362" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_80.png" alt="KHof2-cables_80.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_81.png" alt="KHof2-cables_81.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_82.png" alt="KHof2-cables_82.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_83.png" alt="KHof2-cables_83.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_84.png" alt="KHof2-cables_84.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_85.png" alt="KHof2-cables_85.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_86.png" alt="KHof2-cables_86.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_87.png" alt="KHof2-cables_87.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_88.png" alt="KHof2-cables_88.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_89.png" alt="KHof2-cables_89.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_90.png" alt="KHof2-cables_90.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_91.png" alt="KHof2-cables_91.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_92.png" alt="KHof2-cables_92.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_93.png" alt="KHof2-cables_93.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_94.png" alt="KHof2-cables_94.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_95.png" alt="KHof2-cables_95.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_96.png" alt="KHof2-cables_96.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_97.png" alt="KHof2-cables_97.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_98.png" alt="KHof2-cables_98.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_99.png" alt="KHof2-cables_99.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_100.png" alt="KHof2-cables_100.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_101.png" alt="KHof2-cables_101.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_102.png" alt="KHof2-cables_102.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_103.png" alt="KHof2-cables_103.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_104.png" alt="KHof2-cables_104.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_105.png" alt="KHof2-cables_105.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_106.png" alt="KHof2-cables_106.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_107.png" alt="KHof2-cables_107.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_108.png" alt="KHof2-cables_108.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_109.png" alt="KHof2-cables_109.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_110.png" alt="KHof2-cables_110.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_111.png" alt="KHof2-cables_111.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_112.png" alt="KHof2-cables_112.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_113.png" alt="KHof2-cables_113.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_114.png" alt="KHof2-cables_114.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_115.png" alt="KHof2-cables_115.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_116.png" alt="KHof2-cables_116.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_117.png" alt="KHof2-cables_117.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_118.png" alt="KHof2-cables_118.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_119.png" alt="KHof2-cables_119.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_120.png" alt="KHof2-cables_120.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_121.png" alt="KHof2-cables_121.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_122.png" alt="KHof2-cables_122.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_123.png" alt="KHof2-cables_123.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_124.png" alt="KHof2-cables_124.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_125.png" alt="KHof2-cables_125.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_126.png" alt="KHof2-cables_126.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_127.png" alt="KHof2-cables_127.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_128.png" alt="KHof2-cables_128.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_129.png" alt="KHof2-cables_129.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_130.png" alt="KHof2-cables_130.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_131.png" alt="KHof2-cables_131.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_132.png" alt="KHof2-cables_132.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_133.png" alt="KHof2-cables_133.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_134.png" alt="KHof2-cables_134.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_135.png" alt="KHof2-cables_135.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_136.png" alt="KHof2-cables_136.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_137.png" alt="KHof2-cables_137.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_138.png" alt="KHof2-cables_138.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_139.png" alt="KHof2-cables_139.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_140.png" alt="KHof2-cables_140.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_141.png" alt="KHof2-cables_141.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_142.png" alt="KHof2-cables_142.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_143.png" alt="KHof2-cables_143.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_144.png" alt="KHof2-cables_144.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_145.png" alt="KHof2-cables_145.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_146.png" alt="KHof2-cables_146.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_147.png" alt="KHof2-cables_147.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_148.png" alt="KHof2-cables_148.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_149.png" alt="KHof2-cables_149.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_150.png" alt="KHof2-cables_150.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_151.png" alt="KHof2-cables_151.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_152.png" alt="KHof2-cables_152.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_153.png" alt="KHof2-cables_153.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_154.png" alt="KHof2-cables_154.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_155.png" alt="KHof2-cables_155.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_156.png" alt="KHof2-cables_156.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_157.png" alt="KHof2-cables_157.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_158.png" alt="KHof2-cables_158.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_159.png" alt="KHof2-cables_159.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_160.png" alt="KHof2-cables_160.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_161.png" alt="KHof2-cables_161.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_162.png" alt="KHof2-cables_162.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_163.png" alt="KHof2-cables_163.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_164.png" alt="KHof2-cables_164.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_165.png" alt="KHof2-cables_165.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_166.png" alt="KHof2-cables_166.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_167.png" alt="KHof2-cables_167.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_168.png" alt="KHof2-cables_168.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_169.png" alt="KHof2-cables_169.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_170.png" alt="KHof2-cables_170.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_171.png" alt="KHof2-cables_171.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_172.png" alt="KHof2-cables_172.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_173.png" alt="KHof2-cables_173.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_174.png" alt="KHof2-cables_174.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_175.png" alt="KHof2-cables_175.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_176.png" alt="KHof2-cables_176.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_177.png" alt="KHof2-cables_177.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_178.png" alt="KHof2-cables_178.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_179.png" alt="KHof2-cables_179.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_180.png" alt="KHof2-cables_180.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_181.png" alt="KHof2-cables_181.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_182.png" alt="KHof2-cables_182.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_183.png" alt="KHof2-cables_183.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_184.png" alt="KHof2-cables_184.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_185.png" alt="KHof2-cables_185.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_186.png" alt="KHof2-cables_186.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_187.png" alt="KHof2-cables_187.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_188.png" alt="KHof2-cables_188.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_189.png" alt="KHof2-cables_189.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_190.png" alt="KHof2-cables_190.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_191.png" alt="KHof2-cables_191.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_192.png" alt="KHof2-cables_192.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_193.png" alt="KHof2-cables_193.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_194.png" alt="KHof2-cables_194.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_195.png" alt="KHof2-cables_195.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_196.png" alt="KHof2-cables_196.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_197.png" alt="KHof2-cables_197.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_198.png" alt="KHof2-cables_198.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_199.png" alt="KHof2-cables_199.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_200.png" alt="KHof2-cables_200.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_201.png" alt="KHof2-cables_201.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_202.png" alt="KHof2-cables_202.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_203.png" alt="KHof2-cables_203.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_204.png" alt="KHof2-cables_204.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_205.png" alt="KHof2-cables_205.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_206.png" alt="KHof2-cables_206.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_207.png" alt="KHof2-cables_207.png" width="369" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/KHof2-cables_208.png" alt="KHof2-cables_208.png" width="734" height="414" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_209.png" alt="KHof2-cables_209.png" width="388" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_210.png" alt="KHof2-cables_210.png" width="388" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_211.png" alt="KHof2-cables_211.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_212.png" alt="KHof2-cables_212.png" width="388" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_213.png" alt="KHof2-cables_213.png" width="388" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_214.png" alt="KHof2-cables_214.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_215.png" alt="KHof2-cables_215.png" width="388" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_216.png" alt="KHof2-cables_216.png" width="388" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_217.png" alt="KHof2-cables_217.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_218.png" alt="KHof2-cables_218.png" width="388" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_219.png" alt="KHof2-cables_219.png" width="388" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_220.png" alt="KHof2-cables_220.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_221.png" alt="KHof2-cables_221.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_222.png" alt="KHof2-cables_222.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_223.png" alt="KHof2-cables_223.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_224.png" alt="KHof2-cables_224.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_225.png" alt="KHof2-cables_225.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_226.png" alt="KHof2-cables_226.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_227.png" alt="KHof2-cables_227.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_228.png" alt="KHof2-cables_228.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_229.png" alt="KHof2-cables_229.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_230.png" alt="KHof2-cables_230.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_231.png" alt="KHof2-cables_231.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_232.png" alt="KHof2-cables_232.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_233.png" alt="KHof2-cables_233.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_234.png" alt="KHof2-cables_234.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_235.png" alt="KHof2-cables_235.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_236.png" alt="KHof2-cables_236.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_237.png" alt="KHof2-cables_237.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_238.png" alt="KHof2-cables_238.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_239.png" alt="KHof2-cables_239.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_240.png" alt="KHof2-cables_240.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_241.png" alt="KHof2-cables_241.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_242.png" alt="KHof2-cables_242.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_243.png" alt="KHof2-cables_243.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_244.png" alt="KHof2-cables_244.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_245.png" alt="KHof2-cables_245.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_246.png" alt="KHof2-cables_246.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_247.png" alt="KHof2-cables_247.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_248.png" alt="KHof2-cables_248.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_249.png" alt="KHof2-cables_249.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_250.png" alt="KHof2-cables_250.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_251.png" alt="KHof2-cables_251.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_252.png" alt="KHof2-cables_252.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_253.png" alt="KHof2-cables_253.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_254.png" alt="KHof2-cables_254.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_255.png" alt="KHof2-cables_255.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_256.png" alt="KHof2-cables_256.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_257.png" alt="KHof2-cables_257.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_258.png" alt="KHof2-cables_258.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_259.png" alt="KHof2-cables_259.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_260.png" alt="KHof2-cables_260.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_261.png" alt="KHof2-cables_261.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_262.png" alt="KHof2-cables_262.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_263.png" alt="KHof2-cables_263.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_264.png" alt="KHof2-cables_264.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_265.png" alt="KHof2-cables_265.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_266.png" alt="KHof2-cables_266.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_267.png" alt="KHof2-cables_267.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_268.png" alt="KHof2-cables_268.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_269.png" alt="KHof2-cables_269.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_270.png" alt="KHof2-cables_270.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_271.png" alt="KHof2-cables_271.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_272.png" alt="KHof2-cables_272.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_273.png" alt="KHof2-cables_273.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_274.png" alt="KHof2-cables_274.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_275.png" alt="KHof2-cables_275.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_276.png" alt="KHof2-cables_276.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_277.png" alt="KHof2-cables_277.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_278.png" alt="KHof2-cables_278.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_279.png" alt="KHof2-cables_279.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_280.png" alt="KHof2-cables_280.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_281.png" alt="KHof2-cables_281.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_282.png" alt="KHof2-cables_282.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_283.png" alt="KHof2-cables_283.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_284.png" alt="KHof2-cables_284.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_285.png" alt="KHof2-cables_285.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_286.png" alt="KHof2-cables_286.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_287.png" alt="KHof2-cables_287.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_288.png" alt="KHof2-cables_288.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_289.png" alt="KHof2-cables_289.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_290.png" alt="KHof2-cables_290.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_291.png" alt="KHof2-cables_291.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_292.png" alt="KHof2-cables_292.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_293.png" alt="KHof2-cables_293.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_294.png" alt="KHof2-cables_294.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_295.png" alt="KHof2-cables_295.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_296.png" alt="KHof2-cables_296.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_297.png" alt="KHof2-cables_297.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_298.png" alt="KHof2-cables_298.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_299.png" alt="KHof2-cables_299.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_300.png" alt="KHof2-cables_300.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_301.png" alt="KHof2-cables_301.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_302.png" alt="KHof2-cables_302.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_303.png" alt="KHof2-cables_303.png" width="395" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/KHof2-cables_304.png" alt="KHof2-cables_304.png" width="63" height="16" style="vertical-align:middle" />
+</p>
+
+
+
+
+<div style="font-family:Helvetica; font-size:11px; width:100%; border:1px none #999999; border-top-style:solid; padding-top:2px; margin-top:20px;">
+ <a href="http://www.wolfram.com/language/" style="color:#000; text-decoration:none;">
+  <span style="color:#555555">Created with the Wolfram Language</span> 
+ </a>
+</div>
+</body>
+
+</html>

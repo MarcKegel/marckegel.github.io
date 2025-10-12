@@ -1,0 +1,264 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+
+<TITLE>Seminar on hyperbolic knot theory</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF">
+
+<CENTER>
+<FONTSIZE="+3"><B>Seminar on hyperbolic knot theory</B> </FONT> <P> 
+
+<a href="index.html">Marc Kegel</a><p>
+Sommersemester 2023<p>
+
+</CENTER>
+
+<hr><br>
+
+Freitags, 09:20-10:50, in room 2.006 (RUD 25). <p>
+<b>Office hours / further discussion:</b> after the seminar<p>
+
+
+
+<hr>
+<br>
+
+<b>Announcements:</b> 
+<ul>
+<li><i>01.01.2023</i>: Talks can be given in English or German depending on the audience.
+</li>
+<li><i>01.01.2023</i>: There will be a preliminary meeting at 14.02., 11:15-12:45 in room 1.115 (RUD 25) where I will give a quick overview on the content and where we can assign first topics if desired.
+</li>
+<li><i>21.04.2023</i>: We have slightly changed the time to 09:20-10:50.
+</li>
+</ul>
+
+<hr>
+<br>
+
+<b>Content:</b> We take a rope and glue together the ends of the rope. The resulting closed rope will in general be knotted and is therefore called <b>knot</b>. Some examples are shown below. <br><br>
+
+<img src="Fig8.png" height="200" width="800" align="center"><br><br>
+    
+We say that two knots K and K' are <b>isotopic</b> if K can be deformed continuously (without cutting the rope) into K'. The four knots shown above are all isotopic. In the more precise language of differential topology, 
+we say that a knot is the isotopy class of a smooth embedding of the circle into the 3-sphere. A main goal of knot theory is to develop <b>invariants</b> that can distinguish different knots, understand precisely which 
+properties of a knot are captured by its invariants, and how the different invariants are related to each other. <br><br>
+
+While knot theory looks at the beginning like an easy playground for topologists, it has turned out to be a surprisingly deep topic with many applications in other fields of mathematics. Many of the simplest and most 
+fundamental questions about knots are still unanswered after more than a century, and the questions that have been solved, have often produced very deep and interesting new theories. <br><br>
+    
+In modern knot theory, one does not consider diagrams of knots as in the figure above. Instead, one considers geometric structures on the complements of knots. Since the work of Thurston, it is known that knots fall 
+into three disjoint classes: torus knots, satellite knots, and <b>hyperbolic</b> knots (that admit a complete finite volume hyperbolic metric on their complement). Since torus knots and satellite knots are well-understood, 
+many questions in knot theory can be reduced to hyperbolic geometry. On the other hand, the extra hyperbolic geometry at hand, allows us to define new powerful knot invariants and perform fast computations. For example the knot with the complicated diagram (of about 300 crosings) shown below is not difficult to handle if we consider the hyperbolic geometry of its complement.<br><br>
+    
+<img src="census.png" height="400" width="600" align="center"><br><br>
+    
+The goal of this seminar is to understand and study these results in more detail. To do this, we will follow the book by Jessica Purcell [P] from 2020, which I have not yet read myself, but about which I have heard without 
+exception only positive. <br><br>
+    
+This seminar is intended for students of mathematics and physics (bachelor, teacher students, master, PhD,...) with basic knowledge of Riemannian geometry (curvature, geodesics, hyperbolic space), differential topology 
+(manifolds, group actions), and algebraic topology (fundamental group, covering spaces) for example to the extend of my lecture on <a href="22WSDiffgeoI.html">Differential geometry I</a>. The seminar can also be used as 
+preparation (or as a parallel supplement) for writing a thesis or for a small research project in the area of geometry or topology. <br><br>
+
+
+    
+<br>
+<hr><br>
+    
+<b>Credit points:</b>  The goal of a scientific seminar is the practice of scientific discourse. For this purpose, you will have to work independently on an advanced mathematical topic and discuss it with your fellow students. This is of course only possible if you are present. To receive study points for this seminar, active participation in the seminar is mandatory. In addition, an informative presentation (no longer than 90 minutes) must be given.<br><br>
+
+<hr>
+<br>
+
+<b>Talks:</b>
+
+<TABLE cellspacing=6 cellpadding=6><tr>
+<td colspan=8 height=20 valign="bottom"></td></tr>
+
+<tr>
+<td valign="top">14.02.23</td>
+<td valign="top">Preliminary meeting and overview [P, Chapter 0] <br>
+<font color="red">11:15-12:45 in room 1.115 (RUD 25) </font><br>
+<font color="blue">Marc Kegel</font><br>
+</td>
+</tr>
+    
+<tr>
+<td valign="top">21.04.23</td>
+<td valign="top">The figure-8 knot complement [P, Chapter 1] <br>
+<font color="blue">Marc Kegel</font><br>
+</td>
+</tr>
+    
+<tr>
+<td valign="top"></td>
+<td valign="top">Calculations in hyperbolic space [P, Chapter 2] <br>
+<font color="blue">Recap from your differential topology I lecture in self-study</font><br>
+</td>
+</tr>   
+    
+    
+<tr>
+<td valign="top">28.04.23</td>
+<td valign="top">Geometric structures on manifolds [P, Chapter 3] <br>
+<font color="blue">Wendy Zhangwennan</font><br>
+</td>
+</tr>
+    
+    
+<tr>
+<td valign="top">05.05.23</td>
+<td valign="top">Hyperbolic structures and triangulations [P, Chapter 4] <br>
+<font color="blue">Chun-Sheng Hsueh</font><br>
+</td>
+</tr>
+    
+    
+<tr>
+<td valign="top">12.05.23</td>
+<td valign="top">Discrete groups and the thick-thin decomposition [P, Chapter 5] <br>
+<font color="blue">Ben Eltschig</font><br>
+</td>
+</tr>
+    
+    
+<tr>
+<td valign="top">19.05.23</td>
+<td valign="top">Hyperbolic Dehn filling [P, Chapter 6] <br>
+<font color="blue">Leo Mousseau</font><br>
+</td>
+</tr>
+    
+   <tr>
+<td valign="top">26.05.23</td>
+<td valign="top">no seminar<br>
+</td>
+</tr> 
+    
+    
+    
+    
+    
+<tr>
+<td valign="top">02.06.23</td>
+<td valign="top">Twist knots and augmented links [P, Chapter 7] <br>
+<font color="blue">Farid A. Azar Leon</font><br>
+</td>
+</tr>
+    
+    
+<tr>
+<td valign="top">09.06.23</td>
+<td valign="top">Essential surfaces [P, Chapter 8] <br>
+<font color="blue">Leonard Leass</font><br>
+</td>
+</tr>
+    
+<tr>
+<td valign="top">16.06.23</td>
+<td valign="top">Volume and angle structures [P, Chapter 9] <br>
+<font color="blue"> Chun-Sheng Hsueh</font><br>
+</td>
+</tr>
+    
+    
+<tr>
+<td valign="top">23.06.23</td>
+<td valign="top">Two-bridge knots and links [P, Chapter 10] <br>
+<font color="blue">Dongyu Lin</font><br>
+</td>
+</tr>
+    
+    
+<tr>
+<td valign="top">30.06.23</td>
+<td valign="top">Alternating knots and links [P, Chapter 11] <br>
+<font color="blue">Luis Kristic</font><br>
+</td>
+</tr>
+    
+<tr>
+<td valign="top">07.07.23</td>
+<td valign="top">The geometry of embedded surfaces [P, Chapter 12] <br>
+<font color="blue">N.N.</font><br>
+</td>
+</tr>
+    
+<tr>
+<td valign="top">14.07.23</td>
+<td valign="top">Estimating the volume [P, Chapter 13] <br>
+<font color="blue">Arthur Berns</font><br>
+</td>
+</tr>
+  
+   
+<tr>
+<td valign="top">21.07.23</td>
+<td valign="top">Algebraic sets and the A-polynomial [P, Chapter 15] <br>
+<font color="blue"> Jonas Miehling</font><br>
+</td>
+</tr>
+
+
+
+</TABLE>
+
+
+
+
+
+<br>
+<br>
+
+
+
+
+
+<hr>
+
+
+
+
+<br>
+<br>
+
+<b>Literature:</b><br>
+
+<TABLE cellspacing=6 cellpadding=6><tr>
+<td colspan=8 height=20 valign="bottom"></td></tr>
+
+<tr>
+<td valign=top>[P]</td>
+<td valign=top>J. Purcell,
+<i>Hyperbolic Knot Theory</i>, 2020, available online on the <a href="https://arxiv.org/abs/2002.12652">arXiv:2002.12652</a>.<br>
+</tr>
+
+
+</TABLE>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>
+<p>
+<br>
+<p>
+<br>
+
+<p><a href="index.html">back</a> </p>
+</body>
+</html>
+
+

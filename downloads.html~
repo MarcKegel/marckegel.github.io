@@ -1,0 +1,481 @@
+<html>
+<head>
+<title>Publications</title>
+</head>
+
+<body>
+
+
+<h2>List of Publications of Marc Kegel</h2>
+
+<!--
+
+<h2>Preprints</h2>
+<ul>
+
+
+
+
+
+
+
+</ul>
+
+ -->
+ 
+
+
+
+
+<h2>Submitted articles</h2>
+<ul>
+
+
+
+
+<li>
+M. Kegel, N. Manikandan, L. Mousseau, and M. Silvero,
+<b>Khovanov homology of positive links and of L-space knots</b>,<br>
+<ul>
+<li> <a href="https://arxiv.org/abs/2304.13613">arXiv:2304.13613</a> (April 2023).<br>
+<li> <b>Abstract:</b> We determine the structure of the Khovanov homology groups in homological grading 1 of positive links. More concretely, we show that the first Khovanov homology 
+is supported in a single quantum grading determined by the Seifert genus of the link, where the group is free abelian and of rank determined by the Seifert graph of any of its positive 
+link diagrams. In particular, for a positive link, the first Khovanov homology is vanishing if and only if the link is fibered. Moreover, we extend these results to (p,q)-cables of positive 
+knots whenever q&ge;p. We also show that several infinite families of Heegaard Floer L-space knots have vanishing first Khovanov homology. This suggests a possible extension of our results to L-space knots. 
+<li> Code and data to accompany this paper can be found <a href="https://www.mathematik.hu-berlin.de/~kegemarc/KHposfib/KHposfib.html">here</a>.
+</ul>
+<br><br>
+</li>
+
+<li>
+M. Kegel and F. Schm&auml;schke, 
+<b>Trisecting a 4-dimensional book into three chapters</b>,<br>
+<ul>
+<li> <a href="https://arxiv.org/abs/2304.12250">arXiv:2304.12250</a> (April 2023).<br>
+<li> <b>Abstract:</b> We describe an algorithm that takes as input an open book decomposition of a closed oriented 4-manifold and outputs an explicit trisection diagram of that 4-manifold. 
+Moreover, a slight variation of this algorithm also works for open books on manifolds with non-empty boundary and for 3-manifold bundles over the circle. 
+We apply this algorithm to several simple open books, demonstrate that it is compatible with various topological constructions, and argue that it generalizes and unifies several previously known constructions. 
+</ul>
+<br><br>
+</li>
+
+
+<li>
+R. Casals, J. Etnyre, and M. Kegel, 
+<b>Stein traces and characterizing slopes</b>,<br>
+<ul>
+<li> <a href="https://arxiv.org/abs/2111.00265">arXiv:2111.00265</a> (November 2021).<br>
+<li> <b>Abstract:</b> We show that there exists an infinite family of pairwise non-isotopic Legendrian knots in the standard contact 3-sphere whose Stein traces are equivalent. 
+This is the first example of such phenomenon. Different constructions are developed in the article, including a contact annulus twist, explicit Weinstein handlebody equivalences, 
+and a discussion on dualizable patterns in the contact setting. These constructions can be used to systematically construct distinct Legendrian knots in the standard contact 3-sphere 
+with contactomorphic (-1)-surgeries and, in many cases, equivalent Stein traces. In addition, we also discuss characterizing slopes and provide results in the opposite direction, i.e. 
+describe cases in which the Stein trace, or the contactomorphism type of an r-surgery, uniquely determines the Legendrian isotopy type.  
+<li> Code and data to accompany this paper can be found <a href="characterizingSlopes/characterizing.html">here</a>.
+</ul>
+<br><br>
+</li>
+
+
+</ul>
+
+<h2>Articles accepted for publication</h2>
+<ul>
+
+<li>
+J. Etnyre, M. Kegel, and S. Onaran,
+<b>Contact surgery numbers</b>,<br>
+<ul>
+<li> to appear in <a href="https://www.intlpress.com/site/pub/pages/journals/items/jsg/_home/_main/index.php">J. Symplectic Geom.</a>, 57 pages.
+<li> <a href="https://arxiv.org/abs/2201.00157">arXiv:2201.00157</a> (January 2022, revised April 2023).<br>
+<li> <b>Abstract:</b> It is known that any contact 3-manifold can be obtained by rational contact Dehn surgery along a Legendrian link L in the standard tight contact 3-sphere. 
+We define and study various versions of contact surgery numbers, the minimal number of components of a surgery link L describing a given contact 3-manifold under consideration. <br>
+In the first part of the paper, we relate contact surgery numbers to other invariants in terms of various inequalities. 
+In particular, we show that the contact surgery number of a contact manifold is bounded from above by the topological surgery number of the underlying topological manifold plus three. <br>
+In the second part, we compute contact surgery numbers of all contact structures on the 3-sphere. Moreover, we completely classify the contact structures with contact surgery number one 
+on S&sup1xS&sup2, the Poincar&eacute; homology sphere, and the Brieskorn sphere &Sigma;(2,3,7). We conclude that there exist infinitely many non-isotopic contact structures on each of the above manifolds which 
+cannot be obtained by a single rational contact surgery from the standard tight contact 3-sphere. We further obtain results for the 3-torus and lens spaces. <br>
+As one ingredient of the 
+proofs of the above results we generalize computations of the homotopical invariants of contact structures to contact surgeries with more general surgery coefficients which might be of independent interest. 
+</ul>
+<br><br>
+</li>
+
+<li>
+M. Kegel,
+<b>Non-isotopic transverse tori in Engel manifolds</b>,<br>
+<ul>
+<li> to appear in <a href="https://ems.press/journals/rmi/articles/9181322">Rev. Mat. Iberoam.</a>, 10 pages.
+<li> <a href="https://arxiv.org/abs/2205.04853">arXiv:2205.04853</a> (May 2022, revised January 2023).<br>
+<li> <b>Abstract:</b> In every Engel manifold we construct an infinite family of pairwise non-isotopic transverse tori that are all smoothly isotopic. 
+To distinguish the transverse tori in the family we introduce a homological invariant of transverse tori that is similar to the self-linking number for transverse knots in contact 3-manifolds. 
+Analogous results are presented for Legendrian tori in even contact 4-manifolds. 
+</ul>
+<br><br>
+</li>
+
+<li>
+F. Ayaz, M. Kegel, and K. Mohnke,
+<b>The classification of surfaces via normal curves</b>,<br>
+<ul>
+<li> to appear in <a href="https://link.springer.com/article/10.1365/s13291-022-00265-5">Jahresber. Dtsch. Math.-Ver.</a>, 12 pages.
+<li> <a href="https://arxiv.org/abs/2208.00999">arXiv:2208.00999</a> (August 2022, revised November 2022).<br>
+<li> <b>Abstract:</b> We present a simple proof of the surface classification theorem using normal curves. This proof is analogous to Kneser's and Milnor's proof of the existence and uniqueness 
+of the prime decomposition of 3-manifolds. In particular, we do not need any invariants from algebraic topology to distinguish surfaces. 
+</ul>
+<br><br>
+</li>
+
+<li>
+K. Baker and M. Kegel,
+<b>Census L-space knots are braid positive, except for one that is not</b>,<br>
+<ul>
+<li> to appear in <a href="https://msp.org/soon/coming.php?jpath=agt">Algebr. Geom. Topol.</a>, 45 pages.
+<li> <a href="https://arxiv.org/abs/2203.12013">arXiv:2203.12013</a> (March 2022, revised April 2022).<br>
+<li> <b>Abstract:</b> We exhibit braid positive presentations for all L-space knots in the SnapPy census except one, which is not braid positive. 
+The normalized HOMFLY polynomial of o9_30634, when suitably normalized is not positive, failing a condition of Ito for braid positive knots.<br>
+We generalize this knot to a 1-parameter family of hyperbolic L-space knots that might not be braid positive. 
+Nevertheless, as pointed out by Teragaito, this family yields the first examples of hyperbolic L-space knots whose formal semigroups are actual semigroups, answering a question of Wang. 
+Furthermore, the roots of the Alexander polynomials of these knots are all roots of unity, disproving a conjecture of Li-Ni. 
+<li> <b>Comments:</b> The main article is just 12 pages. The remaining 31 pages is a listing of braid words for the L-space knots in the SnapPy census. Except for o9_30634, these braid words are either positive or negative according to the orientation of the manifold in the census.
+<li> Code and data to accompany this paper can be found <a href="braid positivity of census L-space knots/braid positivity of census L-space knots.html">here</a>.
+</ul>
+<br><br>
+</li>
+
+
+
+
+<li>
+C. Anderson, K. Baker, X. Gao, M. Kegel, K. Le, K. Miller, S. Onaran, G. Sangston, S. Tripp, A. Wood, and A. Wright, 
+<b>L-space knots with tunnel number >1 by experiment</b>,<br>
+<ul>
+<li> to appear in <a href="https://www.tandfonline.com/doi/full/10.1080/10586458.2021.1980753">Exp. Math.</a>, 19 pages.
+<li> <a href="https://arxiv.org/abs/1909.00790">arXiv:1909.00790</a> (September 2019, revised January 2021).<br>
+<li> <b>Abstract:</b> In Dunfield's catalog of the hyperbolic manifolds in the SnapPy census which are complements of L-space knots in S&sup3;, 
+we determine that 22 have tunnel number 2 while the remaining all have tunnel number 1. Notably, these 22 manifolds contain 9 asymmetric L-space knot complements. 
+Furthermore, using SnapPy and KLO we find presentations of these 22 knots as closures of positive braids that realize the Morton-Franks-Williams bound on braid index. 
+The smallest of these has genus 12 and braid index 4. 
+</ul>
+<br><br>
+</li>
+
+
+</ul>
+
+
+<h2>Published articles (in reverse chronological order)</h2>
+<ul>
+
+<li>
+M. Kegel and S. Onaran,
+<b>Contact surgery graphs</b>,<br>
+<ul>
+<li> <a href="https://www.cambridge.org/core/journals/bulletin-of-the-australian-mathematical-society/article/contact-surgery-graphs/F3DEEFEC2AAC2C4AF44EBEB35D626D45">Bull. Aust. Math. Soc.</a>, 107 (2023), 146&ndash;157.
+<li> <a href="https://arxiv.org/abs/2201.03505">arXiv:2201.03505</a> (January 2022).<br>
+<li> <b>Abstract:</b> We define a graph encoding the structure of contact surgery on contact 3-manifolds and analyze its basic properties and some of its interesting subgraphs. 
+</ul>
+<br><br>
+</li>
+
+<li>
+M. Kegel and C. Lange, <b>A Boothby&ndash;Wang theorem for Besse contact manifolds</b>,<br>
+<ul>
+<li> <a href="https://link.springer.com/article/10.1007/s40598-020-00165-5">Arnold Math. J.</a>, 7 (2021), 225&ndash;241.
+<li> <a href="https://arxiv.org/abs/2003.10155">arXiv:2003.10155</a> (March 2020, last revised July 2020).<br>
+<li> <b>Abstract:</b> A Reeb flow on a contact manifold is called Besse if all its orbits are periodic, possibly with different periods. We characterize contact manifolds whose Reeb flows are Besse as principal 
+S&sup1;-orbibundles over integral symplectic orbifolds satisfying some cohomological condition. Apart from the cohomological condition this statement appears in the work of Boyer and Galicki in the language of 
+Sasakian geometry. We illustrate some non-commonly dealt with perspective on orbifolds in a proof of the above result without referring to additional structures. More precisely, we work with orbifolds as 
+quotients of manifolds by smooth Lie group actions with finite stabilizer groups. By introducing all relevant orbifold notions in this equivariant way we avoid patching constructions with orbifold charts.
+As an application, and building on work by Cristofaro-Gardiner&ndash;Mazzucchelli, we deduce a complete classification of closed Besse contact 3-manifolds up to strict contactomorphism.
+</ul>
+<br><br>
+</li>
+
+<li>
+S. Durst, M. Kegel, and J. Licata, <b>Rotation numbers and the Euler class in open books</b>,<br>
+<ul>
+<li> <a href="https://projecteuclid.org/journals/michigan-mathematical-journal/advance-publication/Rotation-Numbers-and-the-Euler-Class-in-Open-Books/10.1307/mmj/20195780.short">Michigan Math. J.</a>, 70 (2021), 869&ndash;888.
+<li> <a href="http://de.arxiv.org/abs/1812.05886">arXiv:1812.05886</a> (December 2018, revised January 2020).<br>
+<li> <b>Abstract:</b> This paper introduces techniques for computing a variety of numerical invariants associated to a Legendrian knot in 
+a contact manifold presented by an open book with a Morse structure. Such a Legendrian knot admits a front projection to the boundary of a 
+regular neighborhood of the binding. From this front projection, we compute the rotation number for any null-homologous Legendrian knot as 
+a count of oriented cusps and linking or intersection numbers; in the case that the manifold has non-trivial second homology, we can recover 
+the rotation number with respect to a Seifert surface in any homology class. We also provide explicit formulas for computing the necessary 
+intersection numbers from the front projection, and we compute the Euler class of the contact structure supported by the open book. Finally, 
+we introduce a notion of Lagrangian projection and compute the classical invariants of a null-homologous Legendrian knot from its projection 
+to a fixed page. 
+</ul>
+<br><br>
+</li>
+
+<li>
+S. Durst, H. Geiges, and M. Kegel, <b>Handle homology of manifolds</b>,<br>
+<ul>
+<li> <a href="https://www.sciencedirect.com/science/article/abs/pii/S0166864119300173">Topology Appl.</a>, 256 (2019), 113&ndash;127. 
+<li> <a href="http://de.arxiv.org/abs/1811.09055">arXiv:1811.09055</a> (November 2018, revised February 2019).<br>
+<li> <b>Abstract:</b> We give an entirely geometric proof, without recourse to cellular homology, 
+of the fact that &#8706;&sup2;=0 in the chain complex defined by a handle decomposition of a given manifold. 
+Topological invariance of the resulting `handle homology' is a consequence of Cerf theory.
+</ul>
+<br><br>
+</li>
+
+<li>
+S. Durst, H. Geiges, J. Gonzalo, and M. Kegel, <b>Parallelisability of 3-manifolds via surgery</b>,<br>
+<ul>
+<li> <a href="https://www.sciencedirect.com/science/article/pii/S0723086918301488">Expo. Math.</a>, 38 (2020), 131&ndash;137.
+<li> <a href="http://de.arxiv.org/abs/1808.05072">arXiv:1808.05072</a> (August 2018).<br>
+<li> <b>Abstract:</b> We present two proofs that all closed, orientable 3-manifolds are parallelisable. Both are based on the Lickorish-Wallace surgery 
+presentation; one proof uses a refinement due to Kaplan and some basic contact geometry. This complements a recent paper by Benedetti-Lisca. 
+</ul>
+<br><br>
+</li>
+
+<li>
+M. Kegel, J. Schneider, and K. Zehmisch, <b>Symplectic dynamics and the 3-sphere</b>,<br>
+<ul>
+<li> <a href="https://link.springer.com/article/10.1007/s11856-019-1956-5">Israel J. Math.</a>, 235 (2020), 245&ndash;254.
+<li> <a href="https://arxiv.org/abs/1806.08603">arXiv:1806.08603</a> (June 2018, revised March 2019).<br>
+<li> <b>Abstract:</b> Given a knot in a closed connected orientable 3-manifold we prove that if the exterior of the knot admits an aperiodic contact form 
+that is Euclidean near the boundary, 
+then the 3-manifold is diffeomorphic to the 3-sphere and the knot is the unknot. 
+</ul>
+<br><br>
+</li>
+
+<li>
+S. Durst and M. Kegel, <b>Computing rotation numbers in open books</b>,<br>
+<ul>
+<li> <a href="http://gokovagt.org/journal/2018/durskege.html">J. G&oumlkova Geom. Topol. GGT</a> 12 (2018), 71&ndash;92,
+<li> <a href="https://arxiv.org/abs/1801.01034">arXiv:1801.01034</a> (January 2018, last revised January 2019).<br>
+<li> <b>Abstract:</b> We give explicit formulas and algorithms for the computation of the rotation number of a nullhomologous Legendrian knot on a page of a contact open book. 
+On the way, we derive new formulas for the computation of the Thurston&ndash;Bennequin invariant of such knots and the Euler class and the d3-invariant of the underlying contact structure. 
+</ul>
+<br><br>
+</li>
+
+<li>
+M. Kegel, <b>Cosmetic contact surgeries along transverse knots and the knot complement problem</b>,<br>
+<ul>
+<li> <a href="https://www.sciencedirect.com/science/article/abs/pii/S0166864118304267?via%3Dihub">Topology Appl.</a>, 256 (2019), 46&ndash;59.
+<li> <a href="https://arxiv.org/abs/1703.05596">arXiv:1703.05596</a> (March 2017, revised February 2019).<br>
+<li> <b>Abstract:</b> We study cosmetic contact surgeries along transverse knots in the standard contact 3-sphere, i.e. contact surgeries that yield again the standard contact 3-sphere. 
+The main result is that we can exclude non-trivial cosmetic contact surgeries (in sufficiently small tubular neighborhoods) along all transverse knots not isotopic to the transverse unknot with self-linking number -1.<br>
+As a corollary it follows that every transverse knot in the standard contact 3-sphere is determined by the contactomorphism type of any sufficiently big exterior. 
+Moreover, we give counterexamples to this for transverse links in the standard contact 3-sphere and for transverse knots in general contact manifolds. 
+</ul>
+<br><br>
+</li>
+
+<li>
+S. Durst and M. Kegel, <b>Computing rotation and self-linking numbers in contact surgery diagrams</b>,<br>
+<ul>
+<li> <a href="http://link.springer.com/article/10.1007/s10474-016-0660-8">Acta Math. Hungar.</a> 150 (2016), 524&ndash;540, (<a href="http://rdcu.be/lROc">view-only version</a>),
+<li> <b>Erratum</b>, <a href="https://link.springer.com/article/10.1007/s10474-017-0759-6">Acta Math. Hungar.</a> 153 (2017), 537, (<a href="http://rdcu.be/wB81">view-only version</a>),
+<li> <a href="http://arxiv.org/abs/1605.00795">arXiv:1605.00795</a> (May 2016, last revised August 2017).<br>
+<li> <b>Abstract:</b> We give an explicit formula to compute the rotation number of a nullhomologous Legendrian knot in contact (1/n)-surgery 
+diagrams along Legendrian links and obtain a corresponding result for the self-linking number of transverse knots. Moreover, 
+we extend the formula by Ding&ndash;Geiges&ndash;Stipsicz for computing the d3-invariant to (1/n)-surgeries. 
+</ul>
+<br><br>
+</li>
+
+<li>
+S. Durst, M. Kegel, and M. Klukas, <b>Computing the Thurston&ndash;Bennequin invariant in open books</b>,<br>
+<ul>
+<li> <a href="http://link.springer.com/article/10.1007/s10474-016-0648-4">Acta Math. Hungar.</a> 150 (2016), 441&ndash;455, (<a href="http://rdcu.be/nxey">view-only version</a>),
+<li> <a href="http://arxiv.org/abs/1605.00794">arXiv:1605.00794</a> (May 2016, revised July 2016).<br>
+<li> <b>Abstract:</b> We give explicit formulas and algorithms for the computation of the Thurston&ndash;Bennequin invariant of a nullhomologous Legendrian knot on a page 
+of a contact open book and on contact Heegaard surfaces. Furthermore, we extend the results to rationally nullhomologous knots in arbitrary 3-manifolds. 
+</ul>
+<br><br>
+</li>
+
+<li>
+M. Kegel, <b>The Legendrian knot complement problem</b>,<br>
+<ul>
+<li> <a href="https://www.worldscientific.com/doi/10.1142/S0218216518500670">J. Knot Theory Ramifications</a> 27 (2018), 1850067, 36 pages, 
+<li> <a href="http://de.arxiv.org/abs/1604.05196">arXiv:1604.05196</a> (April 2016, revised August 2018).<br>
+<li> <b>Abstract:</b> We prove that every Legendrian knot in the tight contact structure of the 3-sphere is determined by the contactomorphism 
+type of its exterior. Moreover, by giving counterexamples we show this to be not true for Legendrian links in the tight 3-sphere. On the way a 
+new user-friendly formula for computing the Thurston-Bennequin invariant of a Legendrian knot in a surgery diagram is given. 
+</ul>
+<br><br>
+</li>
+
+
+</ul>
+
+
+<h2>Non-refereed contributions</h2>
+<ul>
+
+<li>
+M. Kegel, J. Licata, and A. Ray,
+<b>Discussions on knot theory in general 3-manifolds</b>,<br>  
+<ul>
+<li> <a href="https://publications.mfo.de/handle/mfo/3894">Oberwolfach Reports</a> 42 (2021), 4 pages.
+</ul>
+<br><br>
+</li>
+
+<li>
+M. Kegel and M. Silvero,
+<b>Khovanov homology of positive knots</b>,<br> 
+<ul>
+<li> <a href="https://mathinstitutes.org/highlights/khovanov-homology-of-positive-knots">ICERM Highlights</a> (2023), 3 pages.
+</ul>
+<br><br>
+</li>
+
+
+</ul>
+
+
+<h2>Theses</h2>
+<ul>
+<li>
+M. Kegel, <b>Legendrian knots in surgery diagrams and the knot complement problem</b>,<br>
+<ul>
+<li> Doktorarbeit (Ph.D. thesis), Universit&auml;t zu K&ouml;ln (January 2017).
+<li> <a href="Publications/Doktorarbeit.pdf">pdf</a>, 128 pages. (This version differs slightly from the published version, since I have corrected a few mistake in it.)
+<li> <b>Abstract:</b> The famous knot complement theorem by Gordon and Luecke states that two knots in the 3-sphere are equivalent if and only if their complements are homeomorphic. 
+By contrast, this does not hold for links in the 3-sphere or for knots in general 3-manifolds.<br>
+In this thesis the same questions are studied for Legendrian and transverse knots and links. The main results are that Legendrian as well as transverse knots in the 3-sphere with the 
+unique tight contact structure are equivalent if and only if their e
+xteriors are contactomorphic, where the exteriors of the transverse knots have to be sufficiently large. I will also 
+present Legendrian links in the tight contact 3-sphere and Legendrian knots in general contact manifolds that are not determined by their exteriors.<br>
+It will turn out that these questions are closely related to the existence of cosmetic contact surgeries, i.e. contact surgeries that do not change the contact manifold. These are 
+studied with new formulas for computing the classical invariants of Legendrian and transverse knots in the complements of surgery links.<br>
+Another application of cosmetic contact surgeries is that one can switch the crossing type of a given Legendrian or transverse knot by contact surgery without changing the contact 
+manifold. It follows that every Legendrian or transverse knot admits a contact surgery description to an unknot. This yields connections of the classical invariants of Legendrian and 
+transverse knots to the unknotting information of the underlying topological knot type.
+</ul>
+<br><br>
+</li>
+
+<li>
+M. Kegel, <b>Symplektisches F&uuml;llen von Torusb&uuml;ndeln (Symplectic Filling of Torus Bundles)</b>,<br>
+<ul>
+<li> Masterarbeit (Master thesis), Universit&auml;t zu K&ouml;ln (August 2014).
+<li> <a href="Publications/Masterarbeit.pdf">pdf</a>, 176 pages.
+</ul>
+<br><br>
+</li>
+
+<li>
+M. Kegel, <b>Kontakt-Dehn-Chirurgie entlang Legendre-Knoten (Contact Dehn Surgery along Legendrian Knots)</b>,<br>
+<ul>
+<li> Bachelorarbeit (Bachelor thesis), Universit&auml;t zu K&ouml;ln (September 2011).
+<li> <a href="Publications/Bachelorarbeit.pdf">pdf</a>, 61 pages.
+</ul>
+<br><br>
+</li>
+
+
+</ul>
+
+
+
+
+<h2>Other documents</h2>
+<ul>
+
+
+<li>
+M. Kegel, <b>Negative continued fraction expansions</b>,<br>
+<ul>
+<li> <a href="Publications/Negative_continued_fraction_expansions.pdf">pdf</a>, 3 pages.
+<li> This short document collects some negative continued fraction expansions which are appear in the context of contact surgery along Legendrian knots.
+</ul>
+<br><br>
+</li>
+
+
+
+
+
+
+<br><br>
+</li>
+</ul>
+
+
+
+
+
+<h2>Co-authors</h2>
+<ul>
+<li>Chris Anderson
+<li>Fethi Ayaz
+<li><a href="https://www.math.miami.edu/~kenken/">Kenneth Baker</a>
+<li><a href="https://www.math.ucdavis.edu/~casals/">Roger Casals </a>
+<li><a href="http://www.mi.uni-koeln.de/~sdurst/index.html">Sebastian Durst</a>
+<li><a href="https://etnyre.math.gatech.edu/">John Etnyre</a>
+<li><a href="https://sites.google.com/view/gxh/home">Xinghua Gao</a>
+<li><a href="http://www.mi.uni-koeln.de/~geiges/">Hansj&ouml;rg Geiges</a>
+<li>Jes&uacute;s Gonzalo P&eacute;rez
+<li><a href="http://www.mirkoklukas.com/index.html">Mirko Klukas</a>
+<li><a href="https://www.mathematik.uni-muenchen.de/~lange/">Christian Lange</a>
+<li><a href="https://sites.google.com/view/khanhqle/about-me">Khanh Le</a>
+<li><a href="https://sites.google.com/view/joanlicata/home">Joan Licata</a>
+<li><a href="https://sites.google.com/view/naageswaran-manikandan">Naageswaran Manikandan</a>
+<li><a href="https://sites.google.com/view/duncanmccoy/home">Duncan McCoy</a>
+<li><a href="https://math.berkeley.edu/~kmill/">Kyle Miller</a>
+<li><a href="https://www.mathematik.hu-berlin.de/~mohnke/">Klaus Mohnke</a>
+<li>Leo Mousseau
+<li><a href="https://yunus.hacettepe.edu.tr/~sonaran/">Sinem Onaran</a>
+<li>Geoffrey Sangston
+<li>Felix Schm&auml;schke
+<li>Jay Schneider
+<li><a href="https://marithania.github.io/">Marithania Silvero</a>
+<li><a href="https://samueltripp.github.io/">Samuel Tripp</a> 
+<li><a href=""></a> Adam Wood
+<li><a href="https://www.math.unl.edu/~awright14/">Ana Wright</a> 
+<li><a href="https://sites.google.com/view/kai-zehmisch/about-me">Kai Zehmisch</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ul>
+<br><br>
+</li>
+
+<br><br>
+</li>
+</ul>
+
+
+
+
+
+
+<p>See also my list of publications on <a href="https://scholar.google.de/citations?user=iwiPZ0sAAAAJ&hl=de">Google Scholar</a>, 
+<a href="https://mathscinet.ams.org/mathscinet/search/author.html?mrauthid=1185153">MathSciNet</a>,
+<a href="https://zbmath.org/authors/?q=ai%3Akegel.marc">zbMATH</a>,  
+<a href="https://www.researchgate.net/profile/Marc_Kegel">Researchgate</a>, and
+<a href="https://orcid.org/0000-0003-2418-9226">ORCiD</a>, or check my 
+<a href="https://arxiv.org/find/math/1/au:+Kegel_M/0/1/0/all/0/1">arXiv</a> and 
+<a href="http://front.math.ucdavis.edu/author/M.Kegel">Front for the arXiv</a> page.
+</p>
+
+
+
+<br>
+<p>
+<br>
+
+
+<p><a href="index.html">back</a> </p>
+</body>
+</html>

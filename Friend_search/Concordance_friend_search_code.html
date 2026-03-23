@@ -14589,7 +14589,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">regina</span>
@@ -14806,6 +14806,21 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 <span class="c1">####### SEARCH FOR FRIENDS #######</span>
 
+
+<span class="c1"># Imports</span>
+<span class="kn">import</span> <span class="nn">snappy</span>
+<span class="kn">import</span> <span class="nn">regina</span>
+<span class="kn">import</span> <span class="nn">csv</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">clear_output</span> <span class="c1">#used as in-calculation feedback</span>
+
+<span class="c1"># for timing</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="c1"># for exponential function</span>
+<span class="kn">import</span> <span class="nn">math</span>
+<span class="c1"># for random choices</span>
+<span class="kn">import</span> <span class="nn">random</span>
+
 <span class="c1">#### Snappy extensions #####</span>
 
 <span class="k">def</span> <span class="nf">all_positive</span><span class="p">(</span><span class="n">manifold</span><span class="p">):</span>
@@ -14899,12 +14914,10 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
     <span class="k">assert</span> <span class="n">manifold</span><span class="o">.</span><span class="n">num_cusps</span><span class="p">()</span> <span class="o">==</span> <span class="mi">1</span>
     <span class="k">if</span> <span class="n">manifold</span><span class="o">.</span><span class="n">homology</span><span class="p">()</span><span class="o">.</span><span class="n">elementary_divisors</span><span class="p">()</span> <span class="o">!=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]:</span>
         <span class="k">return</span> <span class="kc">False</span>
-
     <span class="k">try</span><span class="p">:</span>
         <span class="n">slopes</span> <span class="o">=</span> <span class="n">manifold</span><span class="o">.</span><span class="n">short_slopes</span><span class="p">(</span><span class="mf">3.5</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
     <span class="k">except</span> <span class="ne">RuntimeError</span><span class="p">:</span>
         <span class="n">slopes</span> <span class="o">=</span> <span class="p">[]</span>
-
     <span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span> <span class="o">=</span> <span class="n">manifold</span><span class="o">.</span><span class="n">homological_longitude</span><span class="p">()</span>
     <span class="n">slopes</span> <span class="o">=</span> <span class="p">[</span><span class="n">s</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">slopes</span> <span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="n">a</span><span class="o">*</span><span class="n">s</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">b</span><span class="o">*</span><span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span>
     <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">slopes</span><span class="p">:</span>
@@ -14913,6 +14926,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
         <span class="k">if</span> <span class="n">is_three_sphere</span><span class="p">(</span><span class="n">M</span><span class="p">,</span><span class="n">tries</span><span class="o">=</span><span class="n">index</span><span class="p">):</span>
             <span class="k">return</span> <span class="kc">True</span>
     <span class="k">return</span> <span class="kc">False</span>
+
 
 <span class="k">def</span> <span class="nf">is_three_sphere</span><span class="p">(</span><span class="n">manifold</span><span class="p">,</span><span class="n">tries</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
@@ -14979,8 +14993,16 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
     <span class="k">global</span> <span class="n">iso_signatures</span>
     <span class="n">iso_signatures</span><span class="o">=</span><span class="p">[]</span>
     <span class="k">global</span> <span class="n">maximum</span>
-    <span class="n">maximum</span><span class="o">=</span><span class="n">max_triangulations</span>
-    <span class="n">T</span><span class="o">.</span><span class="n">retriangulate</span><span class="p">(</span><span class="n">index</span><span class="p">,</span><span class="n">cores</span><span class="p">,</span><span class="n">display_check</span><span class="p">)</span>
+    <span class="n">maximum</span><span class="o">=</span><span class="n">max_triangulations</span> 
+    <span class="k">if</span> <span class="n">index</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">ctr</span><span class="o">=</span><span class="mi">0</span>
+        <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">iso_signatures</span><span class="p">)</span> <span class="o">&lt;</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="n">index</span> <span class="ow">and</span> <span class="n">ctr</span> <span class="o">&lt;</span> <span class="mi">1000</span><span class="p">:</span>
+            <span class="n">ctr</span><span class="o">+=</span><span class="mi">1</span>
+            <span class="n">T</span> <span class="o">=</span> <span class="n">randomise</span><span class="p">(</span><span class="n">T</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">2</span><span class="o">/</span><span class="n">T</span><span class="o">.</span><span class="n">size</span><span class="p">())</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">T</span><span class="o">.</span><span class="n">isoSig</span><span class="p">()</span> <span class="ow">in</span> <span class="n">iso_signatures</span><span class="p">:</span>
+                <span class="n">iso_signatures</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">T</span><span class="o">.</span><span class="n">isoSig</span><span class="p">())</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">T</span><span class="o">.</span><span class="n">retriangulate</span><span class="p">(</span><span class="n">index</span><span class="p">,</span><span class="n">cores</span><span class="p">,</span><span class="n">display_check</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Found&#39;</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">iso_signatures</span><span class="p">),</span><span class="s1">&#39;triangulations&#39;</span><span class="p">)</span>
     <span class="n">drilled</span><span class="o">=</span><span class="p">[]</span>
@@ -15016,7 +15038,58 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
         <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Number of submanifolds found:&#39;</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">drilled</span><span class="p">))</span>
     <span class="k">return</span> <span class="n">drilled</span>
 
-<span class="k">def</span> <span class="nf">search_for_friend</span><span class="p">(</span><span class="n">knot</span><span class="p">,</span><span class="n">effort</span><span class="o">=</span><span class="s1">&#39;low&#39;</span><span class="p">,</span><span class="n">max_number_of_friends</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">Regina</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span><span class="n">SnapPy_dual_curves</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span><span class="n">SnapPy_length_spectrum</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span><span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+<span class="c1">#####################################################################</span>
+<span class="c1">#####################################################################</span>
+<span class="c1"># functions for random walk</span>
+<span class="c1">#####################################################################</span>
+<span class="c1">#####################################################################</span>
+
+<span class="k">def</span> <span class="nf">choosemove</span><span class="p">(</span><span class="n">T</span><span class="p">,</span> <span class="n">beta</span><span class="p">):</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="n">math</span><span class="o">.</span><span class="n">exp</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="n">beta</span><span class="o">*</span><span class="n">T</span><span class="o">.</span><span class="n">size</span><span class="p">()):</span>
+        <span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">a</span> <span class="o">=</span> <span class="mi">2</span>
+    <span class="c1"># setup done</span>
+    <span class="c1"># go up (2-3)</span>
+    <span class="c1"># most triangles correspond to a valid move, no need to classify</span>
+    <span class="k">if</span> <span class="n">a</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">tri</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">T</span><span class="o">.</span><span class="n">countTriangles</span><span class="p">()))</span>
+        <span class="k">if</span> <span class="n">T</span><span class="o">.</span><span class="n">pachner</span><span class="p">(</span><span class="n">T</span><span class="o">.</span><span class="n">triangle</span><span class="p">(</span><span class="n">tri</span><span class="p">),</span><span class="kc">True</span><span class="p">,</span><span class="kc">False</span><span class="p">):</span>
+            <span class="n">S</span> <span class="o">=</span> <span class="n">regina</span><span class="o">.</span><span class="n">Triangulation3</span><span class="p">(</span><span class="n">T</span><span class="p">)</span>
+            <span class="n">S</span><span class="o">.</span><span class="n">pachner</span><span class="p">(</span><span class="n">S</span><span class="o">.</span><span class="n">triangle</span><span class="p">(</span><span class="n">tri</span><span class="p">),</span><span class="kc">False</span><span class="p">,</span><span class="kc">True</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">S</span>
+    <span class="c1"># go down</span>
+    <span class="k">elif</span> <span class="n">a</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="c1"># get all possible 3-2 moves</span>
+        <span class="n">valid</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">T</span><span class="o">.</span><span class="n">countEdges</span><span class="p">()):</span>
+            <span class="k">if</span> <span class="n">T</span><span class="o">.</span><span class="n">pachner</span><span class="p">(</span><span class="n">T</span><span class="o">.</span><span class="n">edge</span><span class="p">(</span><span class="n">e</span><span class="p">),</span><span class="kc">True</span><span class="p">,</span><span class="kc">False</span><span class="p">):</span>
+                <span class="n">valid</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">valid</span> <span class="o">!=</span> <span class="p">[]:</span>
+            <span class="n">S</span> <span class="o">=</span> <span class="n">regina</span><span class="o">.</span><span class="n">Triangulation3</span><span class="p">(</span><span class="n">T</span><span class="p">)</span>
+            <span class="n">S</span><span class="o">.</span><span class="n">pachner</span><span class="p">(</span><span class="n">S</span><span class="o">.</span><span class="n">edge</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">valid</span><span class="p">)),</span><span class="kc">False</span><span class="p">,</span><span class="kc">True</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">S</span>            
+    <span class="c1"># nothing worked</span>
+    <span class="k">return</span> <span class="n">T</span>
+
+<span class="k">def</span> <span class="nf">randomise</span><span class="p">(</span><span class="n">T</span><span class="p">,</span> <span class="n">steps</span><span class="p">,</span> <span class="n">beta</span><span class="p">):</span>
+    <span class="c1"># initialise number of steps</span>
+    <span class="n">st</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="n">st</span> <span class="o">&lt;</span> <span class="n">steps</span><span class="p">:</span>
+        <span class="n">st</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="n">T</span> <span class="o">=</span> <span class="n">choosemove</span><span class="p">(</span><span class="n">T</span><span class="p">,</span><span class="n">beta</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">T</span>
+
+<span class="c1">#####################################################################</span>
+<span class="c1">#####################################################################</span>
+<span class="c1"># end functions for random walk</span>
+<span class="c1">#####################################################################</span>
+<span class="c1">#####################################################################</span>
+
+
+
+<span class="k">def</span> <span class="nf">search_for_friend</span><span class="p">(</span><span class="n">knot</span><span class="p">,</span><span class="n">effort</span><span class="o">=</span><span class="s1">&#39;low&#39;</span><span class="p">,</span><span class="n">max_number_of_friends</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">Regina</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span><span class="n">SnapPy_dual_curves</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span><span class="n">SnapPy_length_spectrum</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span><span class="n">MCMC</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span><span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    This functions takes as input a triangulation of the exterior of a knot K and searchs for friends of K. </span>
 <span class="sd">    (If it is not a knot exterior it still searchs for a knot F on S3 such that 0-surgery on F yields the </span>
@@ -15040,7 +15113,13 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <span class="sd">    Uses the verified length spectrum computation of K(0,1) and drills out short geodesics from K(0,1).</span>
 <span class="sd">    </span>
 <span class="sd">    (3) Regina=True:</span>
-<span class="sd">    This creates a one-vertex triangulation of K(0,1) in regina and then drills out edges of that triangulation.</span>
+<span class="sd">    This creates a one-vertex triangulation of K(0,1) in regina and then drills out edges of that triangulation. Uses</span>
+<span class="sd">    Regina retriangulate function to go through Pachner graph in breadth first search</span>
+
+<span class="sd">        </span>
+<span class="sd">    (4) MCMC=True:</span>
+<span class="sd">    Same as (3), but the next triangulation is found by a random walk rather than by breadth first search in the Pachner</span>
+<span class="sd">    graph (as done by &quot;retriangulate&quot;).</span>
 <span class="sd">    </span>
 <span class="sd">    If Regina is not installed put regina=False. In general it is recommended to use all three methods, since there</span>
 <span class="sd">    exist friends that can only be found effectively with one of the methods.</span>
@@ -15106,8 +15185,9 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
         <span class="n">regina_simplify</span><span class="o">=</span><span class="kc">True</span>
         <span class="n">regina_retriangulate_index</span><span class="o">=</span><span class="mi">0</span> 
         <span class="n">regina_cores_used</span><span class="o">=</span><span class="mi">1</span> 
-        <span class="n">max_regina_submanifolds</span><span class="o">=</span><span class="mi">25</span> 
+        <span class="n">max_regina_submanifolds</span><span class="o">=</span><span class="mi">50</span> 
         <span class="n">maximal_number_of_Pachner_moves</span><span class="o">=</span><span class="mi">10</span>
+        <span class="n">rounds</span> <span class="o">=</span> <span class="mi">10</span>
     
     <span class="k">if</span> <span class="n">effort</span><span class="o">==</span><span class="s1">&#39;medium&#39;</span><span class="p">:</span>
         <span class="n">random</span><span class="o">=</span><span class="kc">False</span> 
@@ -15126,6 +15206,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
         <span class="n">regina_cores_used</span><span class="o">=</span><span class="mi">1</span> 
         <span class="n">max_regina_submanifolds</span><span class="o">=</span><span class="mi">100</span> 
         <span class="n">maximal_number_of_Pachner_moves</span><span class="o">=</span><span class="mi">10</span>
+        <span class="n">rounds</span> <span class="o">=</span> <span class="mi">30</span>
     
     <span class="k">if</span> <span class="n">effort</span><span class="o">==</span><span class="s1">&#39;high&#39;</span><span class="p">:</span>
         <span class="n">random</span><span class="o">=</span><span class="kc">False</span> 
@@ -15142,8 +15223,9 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
         <span class="n">regina_simplify</span><span class="o">=</span><span class="kc">True</span>
         <span class="n">regina_retriangulate_index</span><span class="o">=</span><span class="mi">2</span> 
         <span class="n">regina_cores_used</span><span class="o">=</span><span class="mi">1</span> 
-        <span class="n">max_regina_submanifolds</span><span class="o">=</span><span class="mi">1000</span> 
+        <span class="n">max_regina_submanifolds</span><span class="o">=</span><span class="mi">5000</span> 
         <span class="n">maximal_number_of_Pachner_moves</span><span class="o">=</span><span class="mi">100</span>
+        <span class="n">rounds</span> <span class="o">=</span> <span class="mi">1000</span>
         
     <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;We have choosen the following parameters to search for friends:&#39;</span><span class="p">)</span>
@@ -15163,8 +15245,9 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
         <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;regina_cores_used&#39;</span><span class="p">,</span><span class="n">regina_cores_used</span><span class="p">)</span> 
         <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;max_regina_submanifolds&#39;</span><span class="p">,</span><span class="n">max_regina_submanifolds</span><span class="p">)</span> 
         <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;maximal_number_of_Pachner_moves&#39;</span><span class="p">,</span><span class="n">maximal_number_of_Pachner_moves</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;number of rounds for random walk&#39;</span><span class="p">,</span><span class="n">rounds</span><span class="p">)</span>
         <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;--------------&#39;</span><span class="p">)</span>
-   
+
     <span class="c1">#M is the knot exterior and K the 0-filling</span>
     <span class="n">M</span><span class="o">=</span><span class="n">snappy</span><span class="o">.</span><span class="n">Manifold</span><span class="p">(</span><span class="n">knot</span><span class="p">)</span>
     <span class="n">K</span><span class="o">=</span><span class="n">snappy</span><span class="o">.</span><span class="n">Manifold</span><span class="p">(</span><span class="n">knot</span><span class="p">)</span>
@@ -15221,7 +15304,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
                                                 <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span>
                                                     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Number of potential knot exteriors checked:&#39;</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">possible_knot_exteriors</span><span class="p">))</span>
                                                     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Number of friends found:&#39;</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">friends</span><span class="p">))</span>
-                                                <span class="k">return</span> <span class="n">friends</span>    
+                                                <span class="k">return</span> <span class="n">friends</span><span class="p">,</span> <span class="n">dual_curve</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>  
                     <span class="k">if</span> <span class="n">c</span><span class="o">.</span><span class="n">index</span><span class="o">&gt;</span><span class="n">upper_bound_dual_curves</span><span class="p">:</span>
                         <span class="k">break</span>
                 <span class="k">except</span><span class="p">:</span>
@@ -15263,11 +15346,11 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
                                                 <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span>
                                                     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Number of potential knot exteriors checked:&#39;</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">possible_knot_exteriors</span><span class="p">))</span>
                                                     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Number of friends found:&#39;</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">friends</span><span class="p">))</span>
-                                                <span class="k">return</span> <span class="n">friends</span>  
+                                                <span class="k">return</span> <span class="n">friends</span> 
                 <span class="k">except</span><span class="p">:</span>
                     <span class="k">pass</span>
                                         
-    <span class="c1">##### SNAPPY LENGTH SPECTRUM ######</span>
+<span class="c1">##### SNAPPY LENGTH SPECTRUM ######</span>
     
     <span class="k">if</span> <span class="n">SnapPy_length_spectrum</span><span class="p">:</span>
         <span class="n">sys</span><span class="o">.</span><span class="n">setrecursionlimit</span><span class="p">(</span><span class="n">recursion_limit</span><span class="p">)</span>
@@ -15384,7 +15467,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
             <span class="n">sigs</span><span class="o">=</span><span class="n">drill_edges</span><span class="p">(</span><span class="n">T</span><span class="p">,</span><span class="n">index</span><span class="o">=</span><span class="n">regina_retriangulate_index</span><span class="p">,</span><span class="n">cores</span><span class="o">=</span><span class="n">regina_cores_used</span><span class="p">,</span><span class="n">max_submanifolds</span><span class="o">=</span><span class="n">max_regina_submanifolds</span><span class="p">,</span><span class="n">max_triangulations</span><span class="o">=</span><span class="n">maximal_number_of_Pachner_moves</span><span class="p">,</span><span class="n">randomized</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
             <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span>
                 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Total number of submanifolds found via regina:&#39;</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">sigs</span><span class="p">))</span> 
-            
+
         <span class="k">for</span> <span class="n">sig</span> <span class="ow">in</span> <span class="n">sigs</span><span class="p">:</span>
             <span class="k">try</span><span class="p">:</span>
                 <span class="n">T</span><span class="o">=</span><span class="n">regina</span><span class="o">.</span><span class="n">Triangulation3</span><span class="p">(</span><span class="n">sig</span><span class="p">)</span>
@@ -15417,10 +15500,73 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
                                             <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span>
                                                 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Number of potential knot exteriors checked:&#39;</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">possible_knot_exteriors</span><span class="p">))</span>
                                                 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Number of friends found:&#39;</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">friends</span><span class="p">))</span>
-                                            <span class="k">return</span> <span class="n">friends</span>  
+                                            <span class="k">return</span> <span class="n">friends</span> 
             <span class="k">except</span><span class="p">:</span>
                 <span class="k">pass</span>
-        
+
+    <span class="c1">##### MCMC to replace retriangulation (more variance for other results -- hopefully) ######                 </span>
+    
+    <span class="k">if</span> <span class="n">MCMC</span><span class="p">:</span>        
+        <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;--------------&#39;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;We drill out knots via Regina, using a random walk method to choose next triangulation.&#39;</span><span class="p">)</span>
+            
+        <span class="n">T</span><span class="o">=</span><span class="n">to_regina</span><span class="p">(</span><span class="n">K</span><span class="o">.</span><span class="n">filled_triangulation</span><span class="p">())</span>
+        <span class="k">if</span> <span class="n">regina_simplify</span><span class="p">:</span>
+            <span class="n">T</span><span class="o">.</span><span class="n">intelligentSimplify</span><span class="p">()</span>
+
+        <span class="k">if</span> <span class="n">random</span><span class="o">==</span><span class="kc">False</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;We check all edges.&#39;</span><span class="p">)</span>
+            <span class="n">sigs</span><span class="o">=</span><span class="n">drill_edges</span><span class="p">(</span><span class="n">T</span><span class="p">,</span><span class="n">index</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="n">rounds</span><span class="p">,</span><span class="n">cores</span><span class="o">=</span><span class="n">regina_cores_used</span><span class="p">,</span><span class="n">max_submanifolds</span><span class="o">=</span><span class="n">max_regina_submanifolds</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Total number of submanifolds found via regina:&#39;</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">sigs</span><span class="p">))</span> 
+                
+        <span class="k">if</span> <span class="n">random</span><span class="o">==</span><span class="kc">True</span><span class="p">:</span>   
+            <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;We check random edges.&#39;</span><span class="p">)</span>
+            <span class="n">sigs</span><span class="o">=</span><span class="n">drill_edges</span><span class="p">(</span><span class="n">T</span><span class="p">,</span><span class="n">index</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="n">rounds</span><span class="p">,</span><span class="n">cores</span><span class="o">=</span><span class="n">regina_cores_used</span><span class="p">,</span><span class="n">randomized</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span><span class="n">max_submanifolds</span><span class="o">=</span><span class="n">max_regina_submanifolds</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Total number of submanifolds found via regina:&#39;</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">sigs</span><span class="p">))</span> 
+        <span class="n">ctr</span><span class="o">=</span><span class="mi">0</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;found&quot;</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">sigs</span><span class="p">),</span><span class="s2">&quot;triangulations to check&quot;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">sig</span> <span class="ow">in</span> <span class="n">sigs</span><span class="p">:</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">T</span><span class="o">=</span><span class="n">regina</span><span class="o">.</span><span class="n">Triangulation3</span><span class="p">(</span><span class="n">sig</span><span class="p">)</span>
+                <span class="n">E</span><span class="o">=</span><span class="n">snappy</span><span class="o">.</span><span class="n">Manifold</span><span class="p">(</span><span class="n">T</span><span class="o">.</span><span class="n">snapPea</span><span class="p">())</span>
+                <span class="k">if</span> <span class="n">better_is_isometric_to</span><span class="p">(</span><span class="n">E</span><span class="p">,</span><span class="n">M</span><span class="p">,</span><span class="n">index</span><span class="o">=</span><span class="n">isometry_index</span><span class="p">)</span><span class="o">==</span><span class="kc">False</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="n">is_homology_solid_torus</span><span class="p">(</span><span class="n">E</span><span class="p">)</span><span class="o">==</span><span class="kc">True</span><span class="p">:</span>
+                        <span class="n">already_known</span><span class="o">=</span><span class="kc">False</span>
+                        <span class="k">for</span> <span class="n">X</span> <span class="ow">in</span> <span class="n">possible_knot_exteriors</span><span class="p">:</span>
+                            <span class="k">if</span> <span class="n">better_is_isometric_to</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">E</span><span class="p">):</span>
+                                <span class="n">already_known</span><span class="o">=</span><span class="kc">True</span>
+                                <span class="k">break</span>
+                        <span class="k">if</span> <span class="n">already_known</span><span class="o">==</span><span class="kc">False</span><span class="p">:</span>
+                            <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span>
+                                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;We found a new potential knot exterior:&#39;</span><span class="p">,</span><span class="n">E</span><span class="p">)</span>
+                            <span class="n">possible_knot_exteriors</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">E</span><span class="p">)</span>
+                            <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span>
+                                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Checking for knot complement:&#39;</span><span class="p">,</span><span class="n">E</span><span class="p">)</span>
+                            <span class="k">if</span> <span class="n">is_knot_complement</span><span class="p">(</span><span class="n">E</span><span class="p">,</span><span class="n">index</span><span class="o">=</span><span class="n">exterior_index</span><span class="p">):</span>
+                                <span class="k">if</span> <span class="n">better_is_isometric_to</span><span class="p">(</span><span class="n">E</span><span class="p">,</span><span class="n">M</span><span class="p">,</span><span class="n">try_hard</span><span class="o">=</span><span class="n">try_hard</span><span class="p">)</span><span class="o">==</span><span class="kc">False</span><span class="p">:</span>
+                                    <span class="n">already_known</span><span class="o">=</span><span class="kc">False</span>
+                                    <span class="k">for</span> <span class="n">X</span> <span class="ow">in</span> <span class="n">friends</span><span class="p">:</span>
+                                        <span class="k">if</span> <span class="n">better_is_isometric_to</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">E</span><span class="p">,</span><span class="n">index</span><span class="o">=</span><span class="n">isometry_index</span><span class="p">,</span><span class="n">try_hard</span><span class="o">=</span><span class="n">try_hard</span><span class="p">):</span>
+                                            <span class="n">already_known</span><span class="o">=</span><span class="kc">True</span>
+                                            <span class="k">break</span>
+                                    <span class="k">if</span> <span class="n">already_known</span><span class="o">==</span><span class="kc">False</span><span class="p">:</span>
+                                        <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span>
+                                            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;We found a friend:&#39;</span><span class="p">,</span><span class="n">E</span><span class="p">)</span>
+                                        <span class="n">friends</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">E</span><span class="p">)</span>
+                                        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">friends</span><span class="p">)</span><span class="o">&gt;</span><span class="n">max_number_of_friends</span><span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+                                            <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span>
+                                                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Number of potential knot exteriors checked:&#39;</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">possible_knot_exteriors</span><span class="p">))</span>
+                                                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Number of friends found:&#39;</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">friends</span><span class="p">))</span>
+                                            <span class="k">return</span> <span class="n">friends</span>
+            <span class="k">except</span><span class="p">:</span>
+                <span class="k">pass</span>
+
+
     <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Number of potential knot exteriors checked:&#39;</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">possible_knot_exteriors</span><span class="p">))</span>
         <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Number of friends found:&#39;</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">friends</span><span class="p">))</span>        
@@ -15432,6 +15578,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
     <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Checks the short fillings to be S3.</span>
 <span class="sd">    &#39;&#39;&#39;</span>
+    
     <span class="k">assert</span> <span class="n">manifold</span><span class="o">.</span><span class="n">num_cusps</span><span class="p">()</span> <span class="o">==</span> <span class="mi">1</span>
     <span class="k">if</span> <span class="n">manifold</span><span class="o">.</span><span class="n">homology</span><span class="p">()</span><span class="o">.</span><span class="n">elementary_divisors</span><span class="p">()</span> <span class="o">!=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]:</span>
         <span class="k">return</span> <span class="kc">False</span>
